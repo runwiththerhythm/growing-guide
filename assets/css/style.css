@@ -132,6 +132,42 @@ body {
     border-radius: 50%;  /* Optional: make the button round */
   }
   
+  /* Calendar Strip Styles */
+  .calendar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .calendar .month {
+    width: 25px;
+    margin: 2px;
+    padding: 5px 0;
+    border-radius: 5px;
+    background: #ddd;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Color for sow and harvest months */
+  .month.sow {
+    background: #a8e6a2; /* light green */
+  }
+  .month.harvest {
+    background: #ffc18f; /* soft orange */
+  }
+  
+  .calendar-labels {
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
   
   /* Utility class for hiding elements */
   .hidden {

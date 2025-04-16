@@ -49,6 +49,27 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
   
+  /* Plant Card Styles */
+  .plant-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .plant-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plant-card .img img {
+    width: 150px;      /* Adjust this value to make the image smaller or larger */
+    height: 150px;     /* Adjust this value to maintain the aspect ratio */
+    object-fit: contain;  /* Ensure the image fits well within the box */
+  }
+  
+  
   }
   
   /* Modal Styles */

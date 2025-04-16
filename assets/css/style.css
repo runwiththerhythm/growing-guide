@@ -70,6 +70,12 @@ body {
   }
   
   
+  /* Month Card Styles */
+  .month-card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   }
   
   /* Modal Styles */

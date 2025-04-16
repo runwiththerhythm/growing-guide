@@ -21,3 +21,21 @@ viewByMonthBtn.addEventListener("click", () => {
   monthGrid.classList.remove("hidden");
 });
 
+// Render the plants as cards
+function renderPlants(data) {
+  plantGrid.innerHTML = "";
+  data.forEach(plant => {
+    const card = document.createElement("div");
+    card.className = "plant-card";
+    // Create the card HTML
+card.innerHTML = `
+<div class="img">
+  <img src="${plant.img}" alt="${plant.name}" />
+</div>
+<div class="name">${plant.name}</div>
+`;
+    card.addEventListener("click", () => openModal(plant));
+    plantGrid.appendChild(card);
+  });
+}
+

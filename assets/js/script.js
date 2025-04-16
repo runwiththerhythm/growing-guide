@@ -59,3 +59,7 @@ function openModal(plant) {
   modal.classList.remove("hidden");
 }
 
+// Show plant view by default
+document.addEventListener("DOMContentLoaded", () => {
+  renderPlants(plantData);
+});

@@ -132,3 +132,8 @@ body {
     border-radius: 50%;  /* Optional: make the button round */
   }
   
+  
+  /* Utility class for hiding elements */
+  .hidden {
+    display: none;
+  }

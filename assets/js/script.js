@@ -118,6 +118,8 @@ function renderMonthView() {
   });
 }
 
+// Close modal when clicking the close button
+closeButton.addEventListener("click", () => modal.classList.add("hidden"));
 
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {

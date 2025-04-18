@@ -24,7 +24,12 @@ viewByMonthBtn.addEventListener("click", () => {
 // Render the plants as cards
 function renderPlants(data) {
   plantGrid.innerHTML = "";
-  data.forEach(plant => {
+  // Sort the data alphabetically by plant name
+  const sortedData = data.slice().sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
+  sortedData.forEach(plant => {
     const card = document.createElement("div");
     card.className = "plant-card";
     // Create the card HTML

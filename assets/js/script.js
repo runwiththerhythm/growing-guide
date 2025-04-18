@@ -59,6 +59,44 @@ function openModal(plant) {
   modal.classList.remove("hidden");
 }
 
+
+// Generate a calendar strip for sowing and harvesting
+// Data in plant.sow and plant.harvest use full month names (e.g., "February")
+function generateCalendarStrip(plant) {
+  const shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `
+    <div class="calendar">
+      ${shortMonths.map(month => {
+        let className = "";
+        // Convert short month to full month name
+        const fullMonth = shortToFull(month);
+        if (plant.sow.includes(fullMonth)) {
+          className = "sow";
+        } else if (plant.harvest.includes(fullMonth)) {
+          className = "harvest";
+        }
+        return `<div class="month ${className}">${month}</div>`;
+      }).join("")}
+    </div>
+    <div class="calendar-labels">
+      <span class="label sow">🟩 Sow</span>
+      <span class="label harvest">🟧 Harvest</span>
+    </div>
+  `;
+}
+
+// Helper function to convert short month to full month name
+function shortToFull(shortMonth) {
+  const mapping = {
+    "Jan": "January", "Feb": "February", "Mar": "March",
+    "Apr": "April", "May": "May", "Jun": "June",
+    "Jul": "July", "Aug": "August", "Sep": "September",
+    "Oct": "October", "Nov": "November", "Dec": "December"
+  };
+  return mapping[shortMonth];
+}
+
+
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {
   renderPlants(plantData);

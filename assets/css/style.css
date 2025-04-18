@@ -190,4 +190,52 @@ body {
   .hidden {
     display: none;
   }
+
+  /* 404 Page */
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f9f2; 
+    text-align: center;
+    color: #355e3b;
+  }
+  
+  .error-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .error-container p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0.5rem auto;
+  }
+  
+  .error-container .emoji {
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+  
+  /* Button Styles */
+  .error-container .btns {
+    margin-top: 2rem;
+  }
+  
+  .error-container .btns .btn {
+    text-decoration: none;
+    background-color: #72b36f; /* Green background for buttons */
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .error-container .btns .btn:hover {
+    background-color: #5a9359;
+  }
   

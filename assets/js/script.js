@@ -96,7 +96,8 @@ function handlePlantLinkClick(e) {
 // Generate a calendar strip for sowing and harvesting
 // Data in plant.sow and plant.harvest use full month names (e.g., "February")
 function generateCalendarStrip(plant) {
-  const shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   return `
     <div class="calendar">
       ${shortMonths.map(month => {

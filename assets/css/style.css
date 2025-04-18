@@ -32,6 +32,23 @@ body {
   .view-buttons button:hover {
     background-color: #45a049;
   }
+
+  /* Type Filter Buttons */
+  .type-filters {
+    margin-bottom: 20px;
+  }
+  .type-filters button {
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+  }
+  .type-filters button:hover {
+    background-color: #ccc;
+  }
   
   /* Grid Containers */
   .plant-grid, .month-grid {
@@ -173,3 +190,4 @@ body {
   .hidden {
     display: none;
   }
+  

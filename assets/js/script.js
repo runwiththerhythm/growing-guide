@@ -59,7 +59,6 @@ function openModal(plant) {
   modal.classList.remove("hidden");
 }
 
-
 // Generate a calendar strip for sowing and harvesting
 // Data in plant.sow and plant.harvest use full month names (e.g., "February")
 function generateCalendarStrip(plant) {
@@ -120,6 +119,17 @@ function renderMonthView() {
 
 // Close modal when clicking the close button
 closeButton.addEventListener("click", () => modal.classList.add("hidden"));
+
+// 🔍 Search bar
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const filteredPlants = plantData.filter(plant =>
+    plant.name.toLowerCase().includes(searchTerm)
+  );
+  renderPlants(filteredPlants);
+});
 
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {

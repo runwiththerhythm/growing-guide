@@ -23,7 +23,7 @@ const plantData = [
       spacing: "20cm apart",
       light: "Partial Shade",
       water: 4,
-      tip: "Prefers cooler weather."
+      tip: "Prefers cooler weather; shade it during hot months to prevent bolting. Keep soil moist for crisp leaves."
     },
     {
       name: "Carrot",
@@ -36,7 +36,7 @@ const plantData = [
       spacing: "5-8cm apart",
       light: "Full Sun",
       water: 3,
-      tip: "Thin seedlings early for straight roots."
+      tip: "Ensure soil is loose and free from rocks. Thin seedlings early to avoid overcrowding."
     },
     {
       name: "Leek",
@@ -81,7 +81,7 @@ const plantData = [
       name: "Sweetcorn",
       type: ["vegetable"],
       img: "assets/images/sweetcorn.svg",
-      companions: ["Peas", "Beans", "Cucumbers"],
+      companions: ["Peas", "Beans", "Cucumber"],
       avoid: ["Tomato"],
       sow: ["April", "May"],
       harvest: ["August", "September"],
@@ -107,7 +107,7 @@ const plantData = [
       name: "Chives",
       type: ["herb"],
       img: "assets/images/chives.svg",
-      companions: ["Carrots", "Tomatoes"],
+      companions: ["Carrot", "Tomato"],
       avoid: [],
       sow: ["March", "April", "May"],
       harvest: ["May", "June", "July", "August", "September"],
@@ -133,14 +133,14 @@ const plantData = [
       name: "Pepper",
       type: ["vegetable"],
       img: "assets/images/peppers.svg",
-      companions: ["Basil", "Onions"],
+      companions: ["Basil", "Onion"],
       avoid: ["Fennel"],
       sow: ["February", "March", "April"],
       harvest: ["July", "August", "September"],
       spacing: "40cm apart",
       light: "Full Sun",
       water: 4,
-      tip: "Prefers a greenhouse or warm sheltered spot."
+      tip: "Use a well draining potting mix and do not over water."
     }
   ];
   

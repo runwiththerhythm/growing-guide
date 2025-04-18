@@ -297,6 +297,84 @@ const plantData = [
       light: "Full Sun",
       water: 3,
       tip: "Sow successionally every few weeks for a continuous harvest."
-    }
+    },
+    {
+      name: "Rhubarb",
+      type: ["vegetable", "fruit"],
+      img: "assets/images/rhubarb.svg",
+      companions: ["Brassicas"],
+      avoid: [],
+      sow: ["March", "April"],
+      harvest: ["April", "May", "June", "July"],
+      spacing: "1m apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Easily grown from seed, but must wait at least one year before harvesting to let crowns establish."
+    },
+    {
+      name: "Melon",
+      type: ["fruit"],
+      img: "assets/images/melon.svg",
+      companions: ["Sweetcorn", "Lettuce"],
+      avoid: ["Potatoes"],
+      sow: ["February", "March", "April", "May"],
+      harvest: ["July", "August", "September"],
+      spacing: "60cm apart",
+      light: "Full Sun",
+      water: 4,
+      tip: "Grow in a greenhouse or polytunnel."
+    },
+    {
+      name: "Cape Gooseberries",
+      type: ["fruit"],
+      img: "assets/images/cape-gooseberries.svg",
+      companions: [],
+      avoid: [],
+      sow: ["February", "March", "April"],
+      harvest: ["August", "September", "October"],
+      spacing: "60cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Grow like tomatoes in a greenhouse or warm spot; fruits ripen inside papery husks."
+    },
+    {
+      name: "Strawberries",
+      type: ["fruit"],
+      img: "assets/images/strawberries.svg",
+      companions: ["Spinach", "Lettuce", "Borage"],
+      avoid: ["Brassicas"],
+      sow: ["January", "February", "March"],
+      harvest: ["June", "July", "August"],
+      spacing: "30cm apart",
+      light: "Full Sun",
+      water: 4,
+      tip: "Typically propagated by runners as seed can be slow. Replace plants every 3 years to maintain productivity. Mulch with straw to prevent rot."
+    },
+    {
+      name: "Raspberries",
+      type: ["fruit"],
+      img: "assets/images/raspberries.svg",
+      companions: ["Garlic", "Chives"],
+      avoid: ["Potatoes", "Tomatoes"],
+      sow: ["January", "February", "March"],
+      harvest: ["June", "July", "August", "September"],
+      spacing: "45cm between canes",
+      light: "Full Sun",
+      water: 3,
+      tip: "Typically propagated from canes as seed can be slow. Grow summer and autumn varieties. Support growth."
+    },
+    {
+      name: "Blueberries",
+      type: ["fruit"],
+      img: "assets/images/blueberries.svg",
+      companions: ["Rhododendron", "Azalea"],
+      avoid: ["Brassicas"],
+      sow: ["January", "February", "March"],
+      harvest: ["July", "August"],
+      spacing: "1.5m apart (bushes)",
+      light: "Full Sun",
+      water: 4,
+      tip: "Not typically grown from seed. Need Acidic / Ericaceous soil."
+    },
   ];
   

@@ -14,7 +14,7 @@ const plantData = [
     },
     {
       name: "Lettuce",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/lettuce.svg",
       companions: ["Carrot", "Chives"],
       avoid: ["Celery"],
@@ -27,7 +27,7 @@ const plantData = [
     },
     {
       name: "Carrot",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/carrot.svg",
       companions: ["Lettuce", "Leek"],
       avoid: ["Dill"],
@@ -40,7 +40,7 @@ const plantData = [
     },
     {
       name: "Leek",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/leek.svg",
       companions: ["Carrot", "Celery"],
       avoid: ["Beans"],
@@ -53,7 +53,7 @@ const plantData = [
     },
     {
       name: "Onion",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/onion.svg",
       companions: ["Carrot", "Lettuce"],
       avoid: ["Beans", "Peas"],
@@ -66,7 +66,7 @@ const plantData = [
     },
     {
       name: "Beetroot",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/beetroot.svg",
       companions: ["Lettuce", "Onion"],
       avoid: ["Pole Beans"],
@@ -79,7 +79,7 @@ const plantData = [
     },
     {
       name: "Sweetcorn",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/sweetcorn.svg",
       companions: ["Peas", "Beans", "Cucumbers"],
       avoid: ["Tomato"],
@@ -92,7 +92,7 @@ const plantData = [
     },
     {
       name: "Spring Onions",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/spring-onion.svg",
       companions: ["Carrot", "Beetroot"],
       avoid: [],
@@ -105,7 +105,7 @@ const plantData = [
     },
     {
       name: "Chives",
-      type: "herb",
+      type: ["herb"],
       img: "assets/images/chives.svg",
       companions: ["Carrots", "Tomatoes"],
       avoid: [],
@@ -118,7 +118,7 @@ const plantData = [
     },
     {
       name: "Swede",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/swede.svg",
       companions: ["Onion", "Peas"],
       avoid: ["Cabbage"],
@@ -131,7 +131,7 @@ const plantData = [
     },
     {
       name: "Pepper",
-      type: "vegetable",
+      type: ["vegetable"],
       img: "assets/images/peppers.svg",
       companions: ["Basil", "Onions"],
       avoid: ["Fennel"],

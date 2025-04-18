@@ -131,6 +131,34 @@ searchInput.addEventListener("keyup", () => {
   renderPlants(filteredPlants);
 });
 
+
+// 🌱 Type filter logic
+const typeButtons = document.querySelectorAll(".type-filters button");
+
+typeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const type = button.dataset.type;
+
+    let filtered = plantData;
+
+    if (type !== "all") {
+      filtered = plantData.filter(plant =>
+        Array.isArray(plant.type) && plant.type.includes(type)
+      );
+    }
+
+    const searchTerm = searchInput.value.toLowerCase();
+
+    if (searchTerm) {
+      filtered = filtered.filter(plant =>
+        plant.name.toLowerCase().includes(searchTerm)
+      );
+    }
+
+    renderPlants(filtered);
+  });
+});
+
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {
   renderPlants(plantData);

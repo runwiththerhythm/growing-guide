@@ -46,13 +46,17 @@ card.innerHTML = `
 
 // Open a modal with the plant's details and calendar strip
 function openModal(plant) {
+  // Generate the companions and avoid sections with clickable links
+  const companionsHtml = generateLinksHtml(plant.companions);
+  const avoidHtml = generateLinksHtml(plant.avoid);
+
   modalBody.innerHTML = `
     <div class="modal-header">
       <img src="${plant.img}" alt="${plant.name}" class="modal-img" />
       <h2>${plant.name}</h2>
     </div>
-    <p><strong>✅ Good Companions:</strong> ${plant.companions.join(", ")}</p>
-    <p><strong>❌ Avoid:</strong> ${plant.avoid.join(", ")}</p>
+    <p><strong>✅ Good Companions:</strong> ${companionsHtml || "None"}</p>
+    <p><strong>❌ Avoid:</strong> ${avoidHtml || "None"}</p>
     <p><strong>📏 Spacing:</strong> ${plant.spacing}</p>
     <p><strong>☀️ Light:</strong> ${plant.light}</p>
     <p><strong>💧 Water:</strong> ${"💧".repeat(plant.water)}</p>
@@ -62,6 +66,31 @@ function openModal(plant) {
     </div>
   `;
   modal.classList.remove("hidden");
+
+  // Add event listener for plant links within the modal
+  modalBody.addEventListener("click", handlePlantLinkClick);
+}
+
+// Generate HTML for clickable plant names in Companions or Avoid sections
+function generateLinksHtml(plants) {
+  return plants.map(plant => {
+    return `<a href="#" class="plant-link" data-plant="${plant}">${plant}</a>`;
+  }).join(", ");
+}
+
+// Event listener for clicks on plant links
+function handlePlantLinkClick(e) {
+  // Only handle clicks on plant links
+  if (!e.target.classList.contains("plant-link")) return;
+
+  e.preventDefault(); // Prevent default link behavior
+  const plantName = e.target.dataset.plant;
+
+  // Find the plant by name and open its modal if it exists
+  const targetPlant = plantData.find(p => p.name === plantName);
+  if (targetPlant) {
+    openModal(targetPlant); // Open the modal for the clicked plant
+  }
 }
 
 // Generate a calendar strip for sowing and harvesting

@@ -34,6 +34,102 @@ const plantData = [
       light: "Full Sun",
       water: 3,
       tip: "Thin seedlings early for straight roots."
+    },
+    {
+      name: "Leek",
+      img: "assets/images/leek.svg",
+      companions: ["Carrot", "Celery"],
+      avoid: ["Beans"],
+      sow: ["January", "February", "March"],
+      harvest: ["October", "November", "December"],
+      spacing: "15cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Earth up stems for longer white sections."
+    },
+    {
+      name: "Onion",
+      img: "assets/images/onion.svg",
+      companions: ["Carrot", "Lettuce"],
+      avoid: ["Beans", "Peas"],
+      sow: ["January", "February", "March"],
+      harvest: ["July", "August"],
+      spacing: "10cm apart",
+      light: "Full Sun",
+      water: 2,
+      tip: "Keep well weeded and avoid heavy watering."
+    },
+    {
+      name: "Beetroot",
+      img: "assets/images/beetroot.svg",
+      companions: ["Lettuce", "Onion"],
+      avoid: ["Pole Beans"],
+      sow: ["March", "April", "May", "June", "July"],
+      harvest: ["June", "July", "August", "September", "October"],
+      spacing: "10cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Harvest young for tender roots and leaves."
+    },
+    {
+      name: "Sweetcorn",
+      img: "assets/images/sweetcorn.svg",
+      companions: ["Peas", "Beans", "Cucumbers"],
+      avoid: ["Tomato"],
+      sow: ["April", "May"],
+      harvest: ["August", "September"],
+      spacing: "40cm apart",
+      light: "Full Sun",
+      water: 4,
+      tip: "Plant in blocks for good pollination."
+    },
+    {
+      name: "Spring Onions",
+      img: "assets/images/spring-onion.svg",
+      companions: ["Carrot", "Beetroot"],
+      avoid: [],
+      sow: ["March", "April", "May", "June", "July"],
+      harvest: ["May", "June", "July", "August", "September"],
+      spacing: "1cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Quick to grow and great in salads."
+    },
+    {
+      name: "Chives",
+      img: "assets/images/chives.svg",
+      companions: ["Carrots", "Tomatoes"],
+      avoid: [],
+      sow: ["March", "April", "May"],
+      harvest: ["May", "June", "July", "August", "September"],
+      spacing: "10cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Snip leaves regularly to promote growth."
+    },
+    {
+      name: "Swede",
+      img: "assets/images/swede.svg",
+      companions: ["Onion", "Peas"],
+      avoid: ["Cabbage"],
+      sow: ["May", "June"],
+      harvest: ["October", "November", "December"],
+      spacing: "20cm apart",
+      light: "Full Sun",
+      water: 3,
+      tip: "Harvest after frost for sweeter flavour."
+    },
+    {
+      name: "Pepper",
+      img: "assets/images/peppers.svg",
+      companions: ["Basil", "Onions"],
+      avoid: ["Fennel"],
+      sow: ["February", "March", "April"],
+      harvest: ["July", "August", "September"],
+      spacing: "40cm apart",
+      light: "Full Sun",
+      water: 4,
+      tip: "Prefers a greenhouse or warm sheltered spot."
     }
   ];
   

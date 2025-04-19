@@ -93,6 +93,14 @@ body {
     object-fit: contain; 
   }
   
+  /* Botanical name styling */
+  .botanical-name {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 4px;
+  }
+  
   
   /* Month Card Styles */
   .month-card {

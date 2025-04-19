@@ -195,7 +195,7 @@ function createGroupedPills(plants, label) {
         const pill = document.createElement("span");
         pill.className = `plant-pill ${typeColors[type]}`;
         pill.innerHTML = `<img src="${plant.img}" alt="" class="pill-icon"> ${plant.name}`;
-        pill.addEventListener("click", () => openPlantModal(plant));
+        pill.addEventListener("click", () => openModal(plant));
         pillWrap.appendChild(pill);
       });
 

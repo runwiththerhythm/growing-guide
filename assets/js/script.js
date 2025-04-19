@@ -194,6 +194,17 @@ typeButtons.forEach(button => {
   });
 });
 
+// Toggle active class on filter buttons
+const filterButtons = document.querySelectorAll(".type-filters button");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach(btn => btn.classList.remove("active")); // Remove from all
+    button.classList.add("active"); // Add to clicked one
+  });
+});
+
+
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {
   renderPlants(plantData);

@@ -1,6 +1,7 @@
 const plantData = [
     {
       name: "Tomato",
+      botanicalName: "Solanum lycopersicum",
       type: ["vegetable", "fruit"],
       img: "assets/images/tomato.svg",
       companions: ["Basil", "Marigold"],
@@ -14,6 +15,7 @@ const plantData = [
     },
     {
       name: "Lettuce",
+      botanicalName: "Lactuca sativa",
       type: ["vegetable"],
       img: "assets/images/lettuce.svg",
       companions: ["Carrot", "Chives"],
@@ -27,6 +29,7 @@ const plantData = [
     },
     {
       name: "Carrot",
+      botanicalName: "Daucus carota",
       type: ["vegetable"],
       img: "assets/images/carrot.svg",
       companions: ["Lettuce", "Leek"],
@@ -40,6 +43,7 @@ const plantData = [
     },
     {
       name: "Leek",
+      botanicalName: "Allium porrum",
       type: ["vegetable"],
       img: "assets/images/leek.svg",
       companions: ["Carrot", "Celery"],
@@ -53,6 +57,7 @@ const plantData = [
     },
     {
       name: "Onion",
+      botanicalName: "Allium cepa",
       type: ["vegetable"],
       img: "assets/images/onion.svg",
       companions: ["Carrot", "Lettuce"],
@@ -66,6 +71,7 @@ const plantData = [
     },
     {
       name: "Beetroot",
+      botanicalName: "Beta vulgaris", 
       type: ["vegetable"],
       img: "assets/images/beetroot.svg",
       companions: ["Lettuce", "Onion"],
@@ -79,6 +85,7 @@ const plantData = [
     },
     {
       name: "Sweetcorn",
+      botanicalName: "Zea mays",
       type: ["vegetable"],
       img: "assets/images/sweetcorn.svg",
       companions: ["Peas", "Beans", "Cucumber"],
@@ -92,6 +99,7 @@ const plantData = [
     },
     {
       name: "Spring Onions",
+      botanicalName: "Allium fistulosum",
       type: ["vegetable"],
       img: "assets/images/spring-onion.svg",
       companions: ["Carrot", "Beetroot"],
@@ -105,6 +113,7 @@ const plantData = [
     },
     {
       name: "Chives",
+      botanicalName: "Allium schoenoprasum",
       type: ["herb"],
       img: "assets/images/chives.svg",
       companions: ["Carrot", "Tomato"],
@@ -118,6 +127,7 @@ const plantData = [
     },
     {
       name: "Swede",
+      botanicalName: "Brassica napus",
       type: ["vegetable"],
       img: "assets/images/swede.svg",
       companions: ["Onion", "Peas"],
@@ -131,6 +141,7 @@ const plantData = [
     },
     {
       name: "Pepper",
+      botanicalName: "Capsicum annuum",
       type: ["vegetable"],
       img: "assets/images/peppers.svg",
       companions: ["Basil", "Onion"],
@@ -144,6 +155,7 @@ const plantData = [
     },
     {
       name: "Basil",
+      botanicalName: "Ocimum basilicum",
       type: ["herb"],
       img: "assets/images/basil.svg",
       companions: ["Tomato", "Peppers"],
@@ -157,6 +169,7 @@ const plantData = [
     },
     {
       name: "Parsley",
+      botanicalName: "Petroselinum crispum", 
       type: ["herb"],
       img: "assets/images/parsley.svg",
       companions: ["Tomato", "Asparagus", "Corn"],
@@ -170,6 +183,7 @@ const plantData = [
     },
     {
       name: "Lavender",
+      botanicalName: "Lavandula angustifolia",
       type: ["herb"],
       img: "assets/images/lavender.svg",
       companions: ["Rose", "Cabbage"],
@@ -182,20 +196,8 @@ const plantData = [
       tip: "Prune after flowering to maintain shape and encourage new growth."
     },
     {
-      name: "Calendula",
-      type: ["herb", "flower"],
-      img: "assets/images/calendula.svg",
-      companions: ["Carrot", "Tomato", "Lettuce"],
-      avoid: [],
-      sow: ["March", "April", "May"],
-      harvest: ["June", "July", "August", "September", "October"],
-      spacing: "25cm apart",
-      light: "Full Sun",
-      water: 3,
-      tip: "Deadhead regularly to extend flowering."
-    },
-    {
       name: "Sage",
+      botanicalName: "Salvia officinalis",
       type: ["herb"],
       img: "assets/images/sage.svg",
       companions: ["Rosemary", "Carrot", "Strawberry"],
@@ -209,6 +211,7 @@ const plantData = [
     },
     {
       name: "Mint",
+      botanicalName: "Mentha sp.",
       type: ["herb"],
       img: "assets/images/mint.svg",
       companions: ["Cabbage", "Tomato", "Peas"],
@@ -222,6 +225,7 @@ const plantData = [
     },
     {
       name: "Dill",
+      botanicalName: "Anethum graveolens",
       type: ["herb"],
       img: "assets/images/dill.svg",
       companions: ["Cabbage", "Lettuce", "Onion"],
@@ -235,6 +239,7 @@ const plantData = [
     },
     {
       name: "Fennel",
+      botanicalName: "Foeniculum vulgare",
       type: ["herb", "vegetable"],
       img: "assets/images/fennel.svg",
       companions: [],
@@ -248,6 +253,7 @@ const plantData = [
     },
     {
       name: "Thyme",
+      botanicalName: "Thymus vulgaris", 
       type: ["herb"],
       img: "assets/images/thyme.svg",
       companions: ["Cabbage", "Strawberries"],
@@ -261,6 +267,7 @@ const plantData = [
     },
     {
       name: "Oregano",
+      botanicalName: "Origanum vulgare",
       type: ["herb"],
       img: "assets/images/oregano.svg",
       companions: ["Basil", "Tomato"],
@@ -274,6 +281,7 @@ const plantData = [
     },
     {
       name: "Coriander",
+      botanicalName: "Coriandrum sativum", 
       type: ["herb"],
       img: "assets/images/coriander.svg",
       companions: ["Spinach", "Chervil"],
@@ -287,6 +295,7 @@ const plantData = [
     },
     {
       name: "Rhubarb",
+      botanicalName: "Rheum rhabarbarum", 
       type: ["vegetable", "fruit"],
       img: "assets/images/rhubarb.svg",
       companions: ["Brassicas"],
@@ -300,6 +309,7 @@ const plantData = [
     },
     {
       name: "Melon",
+      botanicalName: "Cucumis melo",
       type: ["fruit"],
       img: "assets/images/melon.svg",
       companions: ["Sweetcorn", "Lettuce"],
@@ -313,6 +323,7 @@ const plantData = [
     },
     {
       name: "Cape Gooseberries",
+      botanicalName: "Physalis peruviana", 
       type: ["fruit"],
       img: "assets/images/cape-gooseberries.svg",
       companions: [],
@@ -326,6 +337,7 @@ const plantData = [
     },
     {
       name: "Strawberries",
+      botanicalName: "Fragaria × ananassa",
       type: ["fruit"],
       img: "assets/images/strawberries.svg",
       companions: ["Spinach", "Lettuce", "Borage"],
@@ -339,6 +351,7 @@ const plantData = [
     },
     {
       name: "Raspberries",
+      botanicalName: "Rubus idaeus",
       type: ["fruit"],
       img: "assets/images/raspberries.svg",
       companions: ["Garlic", "Chives"],
@@ -352,6 +365,7 @@ const plantData = [
     },
     {
       name: "Blueberries",
+      botanicalName: "Vaccinium corymbosum",
       type: ["fruit"],
       img: "assets/images/blueberries.svg",
       companions: ["Rhododendron", "Azalea"],
@@ -365,6 +379,7 @@ const plantData = [
     },
     {
       name: "Calendula",
+      botanicalName: "Calendula officinalis", 
       type: ["flower", "herb"],
       img: "assets/images/calendula.svg",
       companions: ["Tomato", "Carrot"],
@@ -374,10 +389,11 @@ const plantData = [
       spacing: "30cm apart",
       light: "Full Sun",
       water: 2,
-      tip: "Edible petals and great for skin balms; attracts pollinators and deters pests like aphids."
+      tip: "Edible petals and great for skin balms. Attracts pollinators and deters pests like aphids. Deadhead regularly to extend flowering."
     },
     {
       name: "Nasturtium",
+      botanicalName: "Tropaeolum majus",
       type: ["flower", "herb"],
       img: "assets/images/nasturtium.svg",
       companions: ["Cucumber", "Cabbage", "Tomato"],
@@ -391,6 +407,7 @@ const plantData = [
     },
     {
       name: "Borage",
+      botanicalName: "Borago officinalis",
       type: ["flower", "herb"],
       img: "assets/images/borage.svg",
       companions: ["Strawberry", "Tomato"],
@@ -404,6 +421,7 @@ const plantData = [
     },
     {
       name: "Chamomile",
+      botanicalName: "Matricaria chamomilla", 
       type: ["flower", "herb"],
       img: "assets/images/chamomile.svg",
       companions: ["Cabbage", "Onion"],
@@ -417,6 +435,7 @@ const plantData = [
     },
     {
       name: "Sunflower",
+      botanicalName: "Helianthus annuus", 
       type: ["flower"],
       img: "assets/images/sunflower.svg",
       companions: ["Corn", "Cucumber"],
@@ -430,6 +449,7 @@ const plantData = [
     },
     {
       name: "Echinacea",
+      botanicalName: "Echinacea purpurea", 
       type: ["flower", "herb"],
       img: "assets/images/echinacea.svg",
       companions: ["Lavender", "Coneflower family"],
@@ -443,6 +463,7 @@ const plantData = [
     },
     {
       name: "Cornflower",
+      botanicalName: "Centaurea cyanus",
       type: ["flower"],
       img: "assets/images/cornflower.svg",
       companions: ["Calendula", "Chamomile", "Cosmos"],
@@ -456,6 +477,7 @@ const plantData = [
     },
     {
       name: "Cosmos",
+      botanicalName: "Cosmos bipinnatus",
       type: ["flower"],
       img: "assets/images/cosmos.svg",
       companions: ["Cornflower", "Marigold", "Basil"],
@@ -469,6 +491,7 @@ const plantData = [
     },
     {
       name: "Asparagus",
+      botanicalName: "Asparagus officinalis",
       type: ["vegetable"],
       img: "assets/images/asparagus.svg",
       companions: ["Tomato", "Parsley", "Basil"],
@@ -482,6 +505,7 @@ const plantData = [
     },
     {
       name: "Aubergine",
+      botanicalName: "Solanum melongena",
       type: ["vegetable"],
       img: "assets/images/aubergine.svg",
       companions: ["Basil", "Marigold", "Beans"],
@@ -495,6 +519,7 @@ const plantData = [
     },
     {
       name: "Broccoli",
+      botanicalName: "Brassica oleracea var. italica",
       type: ["vegetable"],
       img: "assets/images/broccoli.svg",
       companions: ["Celery", "Onion", "Potato"],
@@ -508,6 +533,7 @@ const plantData = [
     },
     {
       name: "Marigold",
+      botanicalName: "Tagetes spp.", 
       type: ["flower"],
       img: "assets/images/marigold.svg",
       companions: ["Tomato", "Aubergine", "Peppers"],
@@ -521,6 +547,7 @@ const plantData = [
     },
     {
       name: "Globe Artichoke",
+      botanicalName: "Cynara cardunculus var. scolymus", 
       type: ["vegetable", "perennial"],
       img: "assets/images/globe-artichoke.svg",
       companions: ["Peas", "Sunflower", "Lavender"],
@@ -532,5 +559,7 @@ const plantData = [
       water: 3,
       tip: "Perennial in mild climates; sow early indoors and expect harvest from second year. Remove flower heads before they open."
     },
+
+    
   ];
   

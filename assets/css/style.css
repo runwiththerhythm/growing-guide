@@ -43,11 +43,18 @@ body {
     font-size: 14px;
     cursor: pointer;
     background-color: #e0e0e0;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
   }
   .type-filters button:hover {
     background-color: #ccc;
+  }
+
+  .type-filters button.active {
+    border-color: #4caf50; 
+    background-color: #e6f5e6;
+    font-weight: 600;
   }
   
   /* Grid Containers */
@@ -81,9 +88,9 @@ body {
   }
   
   .plant-card .img img {
-    width: 150px;      /* Adjust this value to make the image smaller or larger */
-    height: 150px;     /* Adjust this value to maintain the aspect ratio */
-    object-fit: contain;  /* Ensure the image fits well within the box */
+    width: 150px;
+    height: 150px; 
+    object-fit: contain; 
   }
   
   

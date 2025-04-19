@@ -38,6 +38,7 @@ card.innerHTML = `
   <img src="${plant.img}" alt="${plant.name}" />
 </div>
 <div class="name">${plant.name}</div>
+<div class="botanical-name"><em>${plant.botanicalName}</em></div>
 `;
     card.addEventListener("click", () => openModal(plant));
     plantGrid.appendChild(card);
@@ -54,6 +55,7 @@ function openModal(plant) {
     <div class="modal-header">
       <img src="${plant.img}" alt="${plant.name}" class="modal-img" />
       <h2>${plant.name}</h2>
+      <p class="botanical-name"><em>${plant.botanicalName}</em></p>
     </div>
     <p><strong>✅ Good Companions:</strong> ${companionsHtml || "None"}</p>
     <p><strong>❌ Avoid:</strong> ${avoidHtml || "None"}</p>

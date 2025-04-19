@@ -154,6 +154,59 @@ function renderMonthView() {
   });
 }
 
+const typeOrder = ["vegetable", "fruit", "herb", "flower"];
+const typeLabels = {
+  vegetable: "Vegetables",
+  fruit: "Fruits",
+  herb: "Herbs",
+  flower: "Flowers"
+};
+const typeColors = {
+  vegetable: "vegetable",
+  fruit: "fruit",
+  herb: "herb",
+  flower: "flower"
+};
+
+// Helper: Creates pill elements grouped by type
+function createGroupedPills(plants, label) {
+  const section = document.createElement("div");
+  section.className = "month-section";
+  const heading = document.createElement("h4");
+  heading.textContent = label;
+  section.appendChild(heading);
+
+  typeOrder.forEach(type => {
+    const filtered = plants.filter(p => p.type.includes(type));
+    if (filtered.length) {
+      const groupLabel = document.createElement("div");
+      groupLabel.className = "type-label";
+      groupLabel.textContent = typeLabels[type];
+      section.appendChild(groupLabel);
+
+      const pillWrap = document.createElement("div");
+      pillWrap.className = "pill-wrap";
+
+      filtered.forEach(plant => {
+        const pill = document.createElement("span");
+        pill.className = `plant-pill ${typeColors[type]}`;
+        pill.innerHTML = `<img src="${plant.img}" alt="" class="pill-icon"> ${plant.name}`;
+        pill.addEventListener("click", () => openPlantModal(plant));
+        pillWrap.appendChild(pill);
+      });
+
+      section.appendChild(pillWrap);
+    }
+  });
+
+  if (!plants.length) {
+    section.innerHTML += `<p class="none-text">None</p>`;
+  }
+
+  return section;
+}
+
+
 // Close modal when clicking the close button
 closeButton.addEventListener("click", () => modal.classList.add("hidden"));
 

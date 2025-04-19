@@ -114,7 +114,53 @@ body {
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   }
+
+  .month-section {
+    margin-top: 10px;
+  }
+  .month-section h4 {
+    margin-bottom: 6px;
+    font-size: 1rem;
+    color: #333;
+  }
+  .type-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #555;
+  }
+  .pill-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .plant-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #eee;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .plant-pill img.pill-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .plant-pill.vegetable { background-color: #e0f7e9; }
+  .plant-pill.fruit     { background-color: #ffe2e5; }
+  .plant-pill.herb      { background-color: #d2f0d2; }
+  .plant-pill.flower    { background-color: #f3e9ff; }
   
+  .none-text {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #999;
+  }
+
   /* Modal Styles */
   .modal {
     position: fixed;

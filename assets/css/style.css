@@ -92,13 +92,18 @@ body {
     height: 150px; 
     object-fit: contain; 
   }
+
+  .plant-card .name {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
   
   /* Botanical name styling */
   .botanical-name {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 1em;
     color: #555;
-    margin-top: 4px;
+    margin-top: 2px;
   }
   
   

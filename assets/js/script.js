@@ -132,27 +132,31 @@ function shortToFull(shortMonth) {
   return mapping[shortMonth];
 }
 
-// Render the month view: A grid of 12 month cards
 function renderMonthView() {
   monthGrid.innerHTML = "";
   const fullMonths = ["January", "February", "March", "April", "May", "June",
                       "July", "August", "September", "October", "November", "December"];
-  
+
   fullMonths.forEach(month => {
-    // For each month, list plants to sow and harvest that have this month in their array.
-    const sowPlants = plantData.filter(plant => plant.sow.includes(month)).map(p => p.name);
-    const harvestPlants = plantData.filter(plant => plant.harvest.includes(month)).map(p => p.name);
+    const sowPlants = plantData.filter(p => p.sow.includes(month));
+    const harvestPlants = plantData.filter(p => p.harvest.includes(month));
 
     const card = document.createElement("div");
     card.className = "month-card";
-    card.innerHTML = `
-      <h3>${month}</h3>
-      <p><strong>Sow:</strong> ${sowPlants.join(", ") || "None"}</p>
-      <p><strong>Harvest:</strong> ${harvestPlants.join(", ") || "None"}</p>
-    `;
+    card.innerHTML = `<h3>${month}</h3>`;
+
+    // Sow section
+    const sowSection = createGroupedPills(sowPlants, "Sow");
+    card.appendChild(sowSection);
+
+    // Harvest section
+    const harvestSection = createGroupedPills(harvestPlants, "Harvest");
+    card.appendChild(harvestSection);
+
     monthGrid.appendChild(card);
   });
 }
+
 
 const typeOrder = ["vegetable", "fruit", "herb", "flower"];
 const typeLabels = {

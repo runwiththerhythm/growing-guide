@@ -416,6 +416,54 @@ body {
     background-color: #5a9359;
   }
 
+  /* Resources Page Styles */
+
+  .resources {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: #2e462c;
+  }
+  
+  .resources h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1e3b25;
+  }
+  
+  .resource-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resource-section h3 {
+    font-size: 1.4rem;
+    color: #397c43;
+    margin-bottom: 0.75rem;
+  }
+  
+  .resource-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resource-section li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  
+  .resource-section a {
+    color: #397c43;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .resource-section a:hover {
+    color: #2a5f30;
+  }
+
   /* Media queries */
   
   @media (max-width: 900px) {

@@ -1,4 +1,4 @@
-const { plantData } = require('./assets/js/data.js');
+const { plantData } = require('./data.js');
 
 test('plantData contains Leek with correct months', () => {
   const leek = plantData.find(p => p.name === "Leek");

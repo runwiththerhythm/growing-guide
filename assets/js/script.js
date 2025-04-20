@@ -280,3 +280,13 @@ document.addEventListener("DOMContentLoaded", () => {
      allBtn.classList.add("active");
    }
 });
+
+
+// Expose for Jest testing
+module.exports = {
+  renderPlants,
+  generateCalendarStrip,
+  viewByPlantBtn,
+  viewByMonthBtn
+};
+

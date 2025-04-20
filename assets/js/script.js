@@ -100,6 +100,7 @@ function handlePlantLinkClick(e) {
 function generateCalendarStrip(plant) {
   const shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+     const currentMonth = new Date().toLocaleString('default', { month: 'long' });
   return `
     <div class="calendar">
       ${shortMonths.map(month => {
@@ -111,12 +112,17 @@ function generateCalendarStrip(plant) {
         } else if (plant.harvest.includes(fullMonth)) {
           className = "harvest";
         }
+        // Add "current-month" class if the current month
+        if (fullMonth === currentMonth) {
+          className += " current-month";
+        }
         return `<div class="month ${className}">${month}</div>`;
       }).join("")}
     </div>
     <div class="calendar-labels">
       <span class="label sow">🟩 Sow</span>
       <span class="label harvest">🟧 Harvest</span>
+      <span class="label current-month">⬛ Today</span>
     </div>
   `;
 }

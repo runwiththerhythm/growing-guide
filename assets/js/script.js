@@ -220,7 +220,8 @@ const searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("keyup", () => {
   const searchTerm = searchInput.value.toLowerCase();
   const filteredPlants = plantData.filter(plant =>
-    plant.name.toLowerCase().includes(searchTerm)
+    plant.name.toLowerCase().includes(searchTerm) ||
+    plant.botanicalName.toLowerCase().includes(searchTerm)
   );
   renderPlants(filteredPlants);
 });

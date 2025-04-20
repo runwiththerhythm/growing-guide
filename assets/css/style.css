@@ -11,6 +11,104 @@ body {
     margin-bottom: 20px;
     color: #4caf50;
   }
+
+/* Styling for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent; /* Transparent background */
+  color: #4CAF50; /* Green text color */
+  border-bottom: 1px solid rgba(76, 175, 80, 0.3); /* Optional: subtle border for separation */
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+/* Styling for individual links */
+.nav-links li a {
+  text-decoration: none;
+  color: #4CAF50; /* Green color for text */
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners for all links */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  background-color: #4CAF50; /* Green background on hover */
+  color: white; /* White text on hover */
+  border: 2px solid #4CAF50; /* Border matching the background color */
+  border-radius: 5px; /* Rounded corners like the active button */
+}
+
+/* Active link styling */
+.nav-links li a.active {
+  font-weight: bold;
+  background-color: white; /* White background for active link */
+  color: #4CAF50; /* Green text */
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show the links when the menu is active */
+  }
+
+  .hamburger {
+    display: flex; /* Show the hamburger icon on mobile */
+  }
+}
+
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show the links when the menu is active */
+  }
+
+  .hamburger {
+    display: flex; /* Show the hamburger icon on mobile */
+  }
+}
+
+
   
   /* View buttons */
   .view-buttons {
@@ -329,6 +427,26 @@ body {
   @media (max-width: 600px) {
     .month-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 1rem;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
     }
   }
   

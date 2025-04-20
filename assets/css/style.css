@@ -130,6 +130,11 @@ body {
     margin-bottom: 4px;
     color: #555;
   }
+  .month.current-month {
+    border: 2px solid black;
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
   .pill-wrap {
     display: flex;
     flex-wrap: wrap;

@@ -281,6 +281,15 @@ document.addEventListener("DOMContentLoaded", () => {
    }
 });
 
+// Hamburger nav menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+
 
 // Expose for Jest testing
 module.exports = {

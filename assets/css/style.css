@@ -72,6 +72,19 @@ body {
   .month-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+    /* Media queries to show month cards in rows instead of columns */
+  @media (max-width: 900px) {
+    .month-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .month-grid {
+      grid-template-columns: 1fr;
+    }
+  }
   
   /* Plant Card Styles */
   .plant-card {
@@ -105,6 +118,8 @@ body {
     color: #555;
     margin-top: 2px;
   }
+
+  
   
   
   /* Month Card Styles */
@@ -130,11 +145,7 @@ body {
     margin-bottom: 4px;
     color: #555;
   }
-  .month.current-month {
-    border: 2px solid black;
-    background-color: #e0e0e0;
-    font-weight: bold;
-  }
+  
   .pill-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -230,11 +241,19 @@ body {
   .calendar .month {
     width: 25px;
     margin: 2px;
-    padding: 5px 0;
+    padding: 4px;
     border-radius: 5px;
     background: #ddd;
     font-size: 14px;
     text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .month.current-month {
+    border: 2px solid black;
+    background-color: #e0e0e0;
+    font-weight: bold;
   }
   
   /* Color for sow and harvest months */

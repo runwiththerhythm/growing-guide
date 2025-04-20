@@ -274,4 +274,10 @@ filterButtons.forEach(button => {
 // Show plant view by default
 document.addEventListener("DOMContentLoaded", () => {
   renderPlants(plantData);
+
+   // Set 'All' filter button as active
+   const allBtn = document.querySelector(".type-filters button[data-type='all']");
+   if (allBtn) {
+     allBtn.classList.add("active");
+   }
 });

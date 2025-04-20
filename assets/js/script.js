@@ -138,6 +138,8 @@ function shortToFull(shortMonth) {
   return mapping[shortMonth];
 }
 
+// Month View
+
 function renderMonthView() {
   monthGrid.innerHTML = "";
   const fullMonths = ["January", "February", "March", "April", "May", "June",
@@ -162,7 +164,6 @@ function renderMonthView() {
     monthGrid.appendChild(card);
   });
 }
-
 
 const typeOrder = ["vegetable", "fruit", "herb", "flower"];
 const typeLabels = {
@@ -216,7 +217,6 @@ function createGroupedPills(plants, label) {
   return section;
 }
 
-
 // Close modal when clicking the close button
 closeButton.addEventListener("click", () => modal.classList.add("hidden"));
 
@@ -231,7 +231,6 @@ searchInput.addEventListener("keyup", () => {
   );
   renderPlants(filteredPlants);
 });
-
 
 // 🌱 Type filter logic
 const typeButtons = document.querySelectorAll(".type-filters button");

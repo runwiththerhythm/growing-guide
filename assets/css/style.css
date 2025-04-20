@@ -73,18 +73,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
-    /* Media queries to show month cards in rows instead of columns */
-  @media (max-width: 900px) {
-    .month-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .month-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+    
   
   /* Plant Card Styles */
   .plant-card {
@@ -327,5 +316,19 @@ body {
   
   .error-container .btns .btn:hover {
     background-color: #5a9359;
+  }
+
+  /* Media queries */
+  
+  @media (max-width: 900px) {
+    .month-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .month-grid {
+      grid-template-columns: 1fr;
+    }
   }
   

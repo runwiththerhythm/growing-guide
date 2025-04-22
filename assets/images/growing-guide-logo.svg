@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 200 250"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg32473"
+   sodipodi:docname="growing-guide-logo.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs32477">
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32463,0,1"
+       id="path-effect46760" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32598,0,1|"
+       id="path-effect46756" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32463,0,1"
+       id="path-effect32596" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32598,0,1|"
+       id="path-effect32601" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32598-2,0,1"
+       id="path-effect32601-3"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32463-9,0,1"
+       id="path-effect32596-6"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32598-2,0,1"
+       id="path-effect46756-7"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path32463-9,0,1"
+       id="path-effect46760-5"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview32475"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.1646365"
+     inkscape:cx="130.27591"
+     inkscape:cy="130.73788"
+     inkscape:window-width="1857"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32473" />
+  <title
+     id="title32461">homegrown vegetable</title>
+  <metadata
+     id="metadata32745">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>homegrown vegetable</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g3346"
+     transform="matrix(0.91023254,0,0,0.91023254,10.545863,8.8767178)">
+    <circle
+       style="fill:#008000;stroke:none;stroke-width:5.31602;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       id="circle3303"
+       cx="99.246582"
+       cy="123.41109"
+       r="98.483521" />
+    <circle
+       style="fill:#008000;stroke:#f9f9f9;stroke-width:5.02832;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       id="path2570"
+       cx="99.27816"
+       cy="123.00158"
+       r="93.153656" />
+    <g
+       id="g2575"
+       transform="matrix(1.0218099,0,0,1.0218099,-10.409594,-8.3296671)">
+      <path
+         d="m 53.340877,138.60943 c -3.491919,2.12928 -13.874313,9.76302 -16.708324,11.52627 l 6.015994,24.20166 c 1.879497,-1.34048 19.74048,-11.10159 23.140856,-11.03972 21.454635,0.39316 35.959647,13.93274 51.761367,10.57249 22.92818,-8.59589 34.73804,-18.36601 48.08753,-27.21324 5.99483,-3.97252 1.56606,-12.5059 -6.36991,-8.92008 l -22.23798,10.04789 c 0.098,2.28976 -0.74308,4.10911 -2.12351,5.53917 -1.35017,1.39917 -3.21397,2.39741 -5.19247,3.0838 -2.16027,0.75013 -4.46099,1.13105 -6.3525,1.25735 -7.41398,0.49493 -13.53576,0.48397 -18.36538,-0.0328 -4.94373,-0.5291 -8.577875,-1.60082 -10.902485,-3.21456 -0.475596,-0.32804 -0.594802,-0.98026 -0.266803,-1.45586 0.328681,-0.47564 0.980902,-0.59485 1.455861,-0.26617 2.032646,1.41009 5.344577,2.36197 9.935097,2.85303 4.70527,0.50399 10.70716,0.51236 18.00385,0.025 1.74587,-0.11666 3.85518,-0.4634 5.8118,-1.14201 1.69108,-0.58712 3.26356,-1.4191 4.3643,-2.55916 1.02922,-1.06662 1.64468,-2.4303 1.52934,-4.15488 -0.4189,-6.26036 -8.11383,-7.30696 -13.17741,-7.00408 -28.398434,1.38365 -24.270628,-9.35122 -38.144076,-10.60857 -14.048662,-1.27282 -19.381678,1.8664 -30.265147,8.5044 v 0"
+         style="fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:3.705;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path14" />
+      <path
+         d="m 153.12726,138.67709 c -2.23114,-3.1147 -6.20235,-5.48508 -10.03693,-4.93791 -3.53166,-7.0292 -11.88528,-7.34305 -17.32649,-4.53188 -1.63053,0.94282 -3.63997,2.63455 -5.05647,3.91578 -1.93214,-2.14093 -4.22581,-3.30678 -6.87969,-3.49624 -4.14715,-0.2971 -9.35832,1.22641 -9.44531,6.14239 -1.25931,-0.38214 -2.77832,0.34224 -3.01096,0.62001 3.98344,1.78709 9.86099,3.04185 20.60555,2.52048 v 0 c 3.18171,-0.19009 7.34951,0.12567 10.46097,1.7794 2.11645,1.12522 3.75467,2.81886 4.37723,5.29816 0.16111,-0.0341 0.28937,-0.0696 0.35252,-0.0979 l 15.95958,-7.21161 v 0"
+         style="fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:3.705;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path16" />
+      <path
+         d="m 122.73806,131.48546 c -0.69085,-4.1046 -0.81138,-10.04207 0.82043,-15.62701 1.44553,-4.94694 3.55165,-9.70697 6.26418,-14.22791 17.86336,3.29645 30.05409,-4.476464 33.04442,-24.732064 -21.71145,1.30246 -33.95248,7.75744 -34.40487,23.07514 -2.9781,4.846394 -5.28078,9.973774 -6.84361,15.322834 -0.35702,1.22191 -0.67538,2.45478 -0.95378,3.69862 -0.21335,-1.20776 -0.47564,-2.34585 -0.79013,-3.41502 -1.23287,-4.18776 -3.25715,-7.33083 -6.19976,-9.52846 C 111.84012,94.508536 100.986,91.830126 86.383025,93.662346 c 4.173577,13.878604 13.884415,18.260984 26.158275,14.065504 2.5379,1.92824 4.29988,4.70783 5.39357,8.42252 1.54217,5.23952 0.75141,9.90225 0.68762,15.20105 0.79336,0.53747 1.4913,1.16389 2.09325,1.87927 0.71665,-0.64831 1.39075,-1.22964 2.02232,-1.74523 v 0"
+         style="fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:3.705;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+         id="path18" />
+    </g>
+  </g>
+</svg>

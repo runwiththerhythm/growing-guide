@@ -130,12 +130,6 @@ In this section, list all of your possible user stories for the project. Samples
 
 ## Wireframes
 
-⚠️ INSTRUCTIONS ⚠️
-
-If you've created wireframes or mock-ups, use this section to display screenshots of your wireframes. The example table below uses sample pages from the walkthrough project to give you some inspiration for your own project, so please adjust accordingly.
-
-⚠️ --- END --- ⚠️
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
@@ -347,16 +341,10 @@ Use this space to provide attribution links to any media files borrowed from els
 Looking for some media files? Here are some popular sites to use. The list of examples below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links by sending yourself (or Slackbot) the following command: `!freemedia`.
 
 - Images
-    - [Pexels](https://www.pexels.com)
-    - [Unsplash](https://unsplash.com)
-    - [Pixabay](https://pixabay.com)
-    - [Lorem Picsum](https://picsum.photos) (placeholder images)
-    - [Wallhere](https://wallhere.com) (wallpaper / backgrounds)
-    - [This Person Does Not Exist](https://thispersondoesnotexist.com) (reload to get a new person)
-- Audio
-    - [Audio Micro](https://www.audiomicro.com/free-sound-effects)
-- Video
-    - [Videvo](https://www.videvo.net)
+  - SVG line icons were used from the below sites and coloured in Inkscaoe vector software.
+    - [Noun Project](https://thenounproject.com/)
+    - [Vecteezy](https://www.vecteezy.com/free-vector/vector)
+
 - Image Compression
     - [TinyPNG](https://tinypng.com) (for images <5MB)
     - [CompressPNG](https://compresspng.com) (for images >5MB)

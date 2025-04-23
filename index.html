@@ -13,7 +13,7 @@
             <div class="logo">
               <a href="index.html">
                 <img src="assets/images/growing-guide-logo.svg" alt="Growing Guide Logo" width="120">
-                <span class="logo-text">Growing Guide</span>
+                <span><h1>Growing Guide</h1></span>
               </a>
             </div>
             <ul class="nav-links">
@@ -30,13 +30,16 @@
           </nav>
     </header>
 
-    <h1>Growing Guide</h1>
+    <main>
+
+    <h2>Your seasonal garden companion. </h2>
+    <h3>Discover what to grow and when to sow.</h3>
 
     <input 
     type="text" 
     id="searchInput" 
-    placeholder="Search for a plant..." 
-    style="padding: 10px; width: 300px; font-size: 16px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+    class="search-bar"
+    placeholder="Search for a plant...">
     
     <div class="view-buttons">
         <button id="viewByPlant">View by Plant</button>
@@ -65,6 +68,7 @@
         <div id="modalBody"></div>
         </div>
     </div>
+  </main>
 
     <!-- Load the plant data first, then the script -->
   <script src="assets/js/data.js"></script>

@@ -1,9 +1,8 @@
 /* Import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
 /* Global Styles */
 body {
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 200;
     margin: 0;
     padding: 20px;
@@ -12,31 +11,49 @@ body {
   }
   
   h1 {
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Palanquin Dark", sans-serif;
     font-weight: 400;
-    margin-bottom: 20px;
+    font-size: 3rem;
     color: #4caf50;
+    margin: 0;
   }
 
   h2 {
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Palanquin Dark", sans-serif;
     font-weight: 400;
+    font-size: 1.8rem;
+    color: #4caf50;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-family: "Palanquin Dark", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #4caf50;
+    margin: 0;
+
   }
 
 /* Styling for Navbar */
 
 /* Logo style */
+.logo {
+  margin-bottom: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 3rem;
+
+}
+
 .logo a {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  gap: 0.5rem; /* space between logo and name */
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #4CAF50; 
+  gap: 0.5rem;
 }
 
 .logo img {
@@ -48,28 +65,31 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* stack logo and nav */
   align-items: center;
   padding: 1rem;
-  background-color: transparent; 
-  color: #4CAF50; 
-  border-bottom: 1px solid rgba(76, 175, 80, 0.3); /* Subtle border for separation */
+  background-color: transparent;
+  color: #4CAF50;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.3);
 }
 
 /* Navigation links container */
 .nav-links {
   display: flex;
   list-style-type: none;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Styling for individual links */
 .nav-links li a {
   text-decoration: none;
   color: #4CAF50; 
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 10px 20px;
+  font-family: "Palanquin Dark";
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 8px 16px;
   border-radius: 5px; 
   transition: all 0.3s ease; /* Smooth transition */
 }
@@ -85,10 +105,10 @@ body {
 /* Active link styling */
 .nav-links li a.active {
   font-weight: bold;
-  background-color: white; /* White background for active link */
-  color: #4CAF50; /* Green text */
-  border: 2px solid #4CAF50; /* Green border */
-  border-radius: 5px; /* Rounded corners */
+  background-color: transparent;
+  color: #4CAF50; 
+  /*border: 2px solid #4CAF50; */
+  border-radius: 5px; 
 }
 
 /* Hamburger icon for mobile */
@@ -117,23 +137,8 @@ body {
     display: flex; /* Show the links when the menu is active */
   }
 
-  .hamburger {
-    display: flex; /* Show the hamburger icon on mobile */
-  }
-}
-
-
-/* Mobile menu styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Hide the links by default */
+  .logo a {
     flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
-
-  .nav-links.active {
-    display: flex; /* Show the links when the menu is active */
   }
 
   .hamburger {
@@ -141,7 +146,26 @@ body {
   }
 }
 
+/* Introduction */
+.app-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #4CAF50;
+  font-weight: 500;
+}
 
+
+/* Search  bar */
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
   
   /* View buttons */
   .view-buttons {

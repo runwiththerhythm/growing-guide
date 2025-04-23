@@ -5,7 +5,7 @@ const plantData = [
       type: ["vegetable", "fruit"],
       img: "assets/images/tomato.svg",
       companions: ["Basil", "Marigold"],
-      avoid: ["Sweetorn", "Fennel"],
+      avoid: ["Sweetcorn", "Fennel"],
       sow: ["February", "March", "April"],
       harvest: ["July", "August", "September"],
       spacing: "45cm apart",
@@ -98,7 +98,7 @@ const plantData = [
       tip: "Plant in blocks for good pollination."
     },
     {
-      name: "Spring Onions",
+      name: "Spring Onion",
       botanicalName: "Allium fistulosum",
       type: ["vegetable"],
       img: "assets/images/spring-onion.svg",

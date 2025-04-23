@@ -7,13 +7,11 @@
 
 ⚠️ INSTRUCTIONS ⚠️
 
-In this section, include a few paragraphs providing an overview of your project. Essentially, this part is your "sales pitch". Describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+Growing Guide is a beginner friendly, informative and interactive gardening app. This app was created with beginner gardeners and seasonal growers in mind. We wanted a calm, helpful space where you could quickly see what to plant and when, without the overwhelm.
 
-⚠️ --- END --- ⚠️
+You can explore the growing guide in two ways: by individual plants or by month, helping you plan ahead or just stay in sync with the season.
 
-🛑 NOTES 🛑
-
-Do not add a **Table of Contents** to your Markdown files. GitHub has these built-in automatically using the headers/hashtags.
+The design is kept simple, fun, and friendly
 
 Don't add screenshots for the README/TESTING into your `assets` or `static` folders. Create a new folder at the root-level called `documentation`. Consider creating sub-directories within `documentation` to handle things like `wireframes`, `features`, `validation`, `responsiveness`, etc.
 
@@ -388,6 +386,8 @@ A few examples have been provided below to give you some ideas on how to do your
 | [TinyPNG](https://tinypng.com) | Compressing images < 5MB |
 | [CompressPNG](https://compresspng.com) | Compressing images > 5MB |
 | [CloudConvert](https://cloudconvert.com/webp-converter) | Converting images to `.webp` |
+
+<a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a>
 
 ### Acknowledgements
 

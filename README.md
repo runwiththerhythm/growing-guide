@@ -5,33 +5,19 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide)
 
-⚠️ INSTRUCTIONS ⚠️
 
-Growing Guide is a beginner friendly, informative and interactive gardening app. This app was created with beginner gardeners and seasonal growers in mind. We wanted a calm, helpful space where you could quickly see what to plant and when, without the overwhelm.
+Growing Guide is a beginner friendly, informative and interactive gardening app. This app was created with beginner gardeners and seasonal growers in mind. I sought to create a calm, helpful space where you could quickly see what to plant and when, without the overwhelm.
 
 You can explore the growing guide in two ways: by individual plants or by month, helping you plan ahead or just stay in sync with the season.
 
 The design is kept simple, fun, and friendly
 
-Don't add screenshots for the README/TESTING into your `assets` or `static` folders. Create a new folder at the root-level called `documentation`. Consider creating sub-directories within `documentation` to handle things like `wireframes`, `features`, `validation`, `responsiveness`, etc.
-
 **Site Mockups**
 *([amiresponsive](https://ui.dev/amiresponsive?url=https://runwiththerhythm.github.io/growing-guide), [techsini](https://techsini.com/multi-mockup), etc.)*
-Having issues generating site mockups? This is likely due to security policies with your deployed site.
-If you open up your DevTools, there may be an error referencing `X-Frame-Options`.
-
-For Chrome users, head over to http://bit.ly/3iRPn4u and install the extension within your browser. Once installed, navigate back to the mockup site of your choice. You should find your site rendering in the various devices now.
-
-Alternatively, open your project in Gitpod and run the server. Once the site is running, click the `Ports` tab from your Gitpod Terminal. Click the padlock on the appropriate port for your project (`Flask: 5000`, `Django: 8000`). This will make your local page public temporarily. Now, copy the URL of your live-preview page into the responsive tool above. You should find your site rendering in the various devices.
-
-🛑 --- END ---- 🛑
 
 ![screenshot](documentation/mockup.png)
 
 source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://runwiththerhythm.github.io/growing-guide)
-
-> [!IMPORTANT]
-> The examples in these templates are strongly influenced by the Code Institute walkthrough project called "Love Maths".
 
 ## UX
 
@@ -39,43 +25,48 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 
 #### 1. Strategy Plane
 ##### Purpose
-- Provide users with a simple and accessible way to perform basic mathematical operations.
-- Deliver instant feedback to improve usability and encourage learning.
-- Support accessibility and user-friendly interactions.
+- Help users plan their gardening activities with a simple, accessible interface.
+- Offer seasonal sowing and growing guidance tailored to the UK climate.
+- Promote learning through detailed plant info and curated resources.
 
 ##### Primary User Needs
-- Perform calculations quickly and accurately.
-- Understand errors and correct them easily.
-- Track performance to motivate self-improvement.
+- Know what to sow and when and be able to navigate this information quickly.
+- Filter plants by type.
+- Search for plants quickly.
+- Access reliable growing info and learning resources.
+- Use the app easily across devices, including mobile.
 
 ##### Business Goals
-- Encourage users to engage with the app for educational and recreational purposes.
-- Showcase a well-designed, accessible tool that supports learning.
+- Build a visually engaging, educational tool to support home gardening.
+- Showcase potential for portfolio use or expansion into a more feature-rich tool.
 
 #### 2. Scope Plane
 ##### Features
 - A full list of [Features](#features) can be viewed in detail below.
 
 ##### Content Requirements
-- Clear labels and instructions for input and operator buttons.
-- Error messages for invalid inputs.
-- Instant calculation results.
-- Statistics display for tracking correct/incorrect equations.
+- Plant data: name, type, sowing months, harvest months, companions, avoids.
+- Navigation accessibility for all screen sizes.
+- Resource links and categories.
+
 
 #### 3. Structure Plane
 ##### Information Architecture
 - **Navigation Menu**:
   - Simple navbar with accessible links.
 - **Hierarchy**:
-  - Clear and prominent placement of the input fields and operator buttons.
-  - Visible results area and error messages.
+  - Logo and branding at the top of the page.
+  - Navbar centrally underneath.
+  - Filter controls and views are prominent.
+  - Plants / months shown in a grid with interaction cues.
 
 ##### User Flow
-1. User lands on the home page → reads brief instructions.
-2. Inputs two numbers → selects an operator.
-3. Sees instant results or an error message if input is invalid.
-4. Views correct/incorrect equation feedback.
-5. Starts fresh with the next calculation.
+1. User lands on the home page → reads intro and sees default plant view.
+2. Directly searches for a plant or filters or switches views → explores seasonal plants.
+3. Clicks a plant → reads modal with growing instructions and tips.
+4. Clicks through the plant names in modal → taken to the clicked plants modal.
+4. Uses navigation to explore Resources or learn more about the app.
+5. Return to explore more plants.
 
 #### 4. Skeleton Plane
 ##### Wireframe Suggestions

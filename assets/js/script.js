@@ -10,18 +10,22 @@ const viewByPlantBtn = document.getElementById("viewByPlant");
 const viewByMonthBtn = document.getElementById("viewByMonth");
 
 // View switching: Show plant grid view
-viewByPlantBtn.addEventListener("click", () => {
+if (viewByPlantBtn) {
+  viewByPlantBtn.addEventListener("click", () => {
   renderPlants(plantData);
   plantGrid.classList.remove("hidden");
   monthGrid.classList.add("hidden");
 });
+}
 
 // View switching: Show month view
+if (viewByPlantBtn) {
 viewByMonthBtn.addEventListener("click", () => {
   renderMonthView();
   plantGrid.classList.add("hidden");
   monthGrid.classList.remove("hidden");
 });
+}
 
 // Render the plants as cards
 function renderPlants(data) {
@@ -220,19 +224,23 @@ function createGroupedPills(plants, label) {
 }
 
 // Close modal when clicking the close button
+if (close.Button) {
 closeButton.addEventListener("click", () => modal.classList.add("hidden"));
+}
 
 // 🔍 Search bar
 const searchInput = document.getElementById("searchInput");
 
-searchInput.addEventListener("keyup", () => {
-  const searchTerm = searchInput.value.toLowerCase();
-  const filteredPlants = plantData.filter(plant =>
-    plant.name.toLowerCase().includes(searchTerm) ||
-    plant.botanicalName.toLowerCase().includes(searchTerm)
-  );
-  renderPlants(filteredPlants);
-});
+if (searchInput) {
+  searchInput.addEventListener("keyup", () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredPlants = plantData.filter(plant =>
+      plant.name.toLowerCase().includes(searchTerm) ||
+      plant.botanicalName.toLowerCase().includes(searchTerm)
+    );
+    renderPlants(filteredPlants);
+  });
+}
 
 // 🌱 Type filter logic
 const typeButtons = document.querySelectorAll(".type-filters button");
@@ -287,9 +295,12 @@ document.addEventListener("DOMContentLoaded", () => {
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
+
 
 
 

@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 const { plantData } = require('./data.js');
 
 test('plantData contains Leek with correct months', () => {

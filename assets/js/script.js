@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 // Get elements from the DOM
 const plantGrid = document.getElementById("plantGrid");
 const monthGrid = document.getElementById("monthGrid");

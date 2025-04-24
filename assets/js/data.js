@@ -566,5 +566,6 @@ const plantData = [
   ];
 
   // For testing with Jest
-  module.exports = { plantData };
-  
+if (typeof module !== "undefined") module.exports = {
+  plantData
+};

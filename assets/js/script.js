@@ -294,7 +294,7 @@ hamburger.addEventListener('click', () => {
 
 
 // Expose for Jest testing
-module.exports = {
+if (typeof module !== "undefined") module.exports = {
   renderPlants,
   generateCalendarStrip,
   viewByPlantBtn,

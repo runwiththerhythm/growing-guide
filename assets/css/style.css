@@ -61,8 +61,6 @@ body {
   display: block;
 }
 
-
-
 .navbar {
   display: flex;
   flex-direction: column; /* stack logo and nav */
@@ -115,26 +113,34 @@ body {
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px; 
+  padding: 10px; 
+  border: 2px solid green;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
+/* Bars inside the hamburger */
 .hamburger .bar {
-  width: 25px;
+  width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: green;
+  border-radius: 2px;
 }
 
 /* Mobile menu styles */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Hide the links by default */
+    display: none;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
   }
 
   .nav-links.active {
-    display: flex; /* Show the links when the menu is active */
+    display: flex;
   }
 
   .logo a {
@@ -142,7 +148,7 @@ body {
   }
 
   .hamburger {
-    display: flex; /* Show the hamburger icon on mobile */
+    display: flex;
   }
 }
 
@@ -154,7 +160,6 @@ body {
   color: #4CAF50;
   font-weight: 500;
 }
-
 
 /* Search  bar */
 .search-bar {
@@ -228,8 +233,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
-    
-  
   /* Plant Card Styles */
   .plant-card {
     background: #fff;
@@ -263,8 +266,6 @@ body {
     margin-top: 2px;
   }
 
-  
-  
   
   /* Month Card Styles */
   .month-card {

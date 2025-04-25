@@ -45,7 +45,8 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 - A full list of [Features](#features) can be viewed in detail below.
 
 ##### Content Requirements
-- Plant data: name, type, sowing months, harvest months, companions, avoids.
+- Icons for plants.
+- Plant data: name, type, sowing months, harvest months, companions, plants to avoid.
 - Navigation accessibility for all screen sizes.
 - Resource links and categories.
 
@@ -91,15 +92,15 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
-| As a user | I would like to input two numbers and select an operator (`+`, `-`, `*`, `/`) | so that I can calculate a result. |
-| As a user | I would like the application to show me an error message if I enter empty input (`NaN`) | so that I understand what went wrong. |
-| As a user | I would like the calculation to happen instantly after I select an operator | so that I get my result quickly without waiting. |
-| As a user | I would like the application to have clear and large buttons for each operator | so that I can easily select the correct one on any device. |
-| As a user | I would like the application to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. |
-| As a user | I would like clear labels and instructions | so that I understand how to use the app without confusion. |
-| As a user | I would like the app to show me the correct result if my equation was incorrect | so that I understand how the answer was calculated. |
-| As a user |  I would like to see how many equations I get correct or incorrect | so I can push myself to improve my math skills. |
-| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. |
+| As a first-time visitor | I want to immediately understand what the app does from the homepage | so that I know it’s useful for planning my garden. |
+| As a first-time visitor | I want to quickly access beginner-friendly resources | so that I can learn how to start growing my own food.|
+| As a first-time visitor | I want to browse the plant list without creating an account  | so that I can explore without commitment. |
+| As a first-time visitor | I want to see plant info in a modal with clear, attractive images and symbols  | so that I can quickly understand their needs. |
+| As a first-time visitor |  I would like to see a 404 error page if I visit a dead link | so I am not confused or lost. |
+| As a returning visitor |  I want to jump straight into the calendar view | so that I can see what I need to do this month in my garden.|
+| As a returning visitor | I want a Resources page with helpful links to articles, seeds and equipment retailers, and book recommendations  | so I can keep learning about growing. |
+| As a returning visitor | I want to be able to search for specific plants  | so I can find information I need efficiently. |
+| As a returning visitor | I want to be able to contact the app creator  | so I can give them feedback. |
 
 ## Wireframes
 

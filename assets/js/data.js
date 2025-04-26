@@ -525,7 +525,7 @@ const plantData = [
       type: ["vegetable"],
       img: "assets/images/broccoli.svg",
       companions: ["Celery", "Onion", "Potato"],
-      avoid: ["Strawberry", "Tomato"],
+      avoid: ["Strawberries", "Tomato"],
       sow: ["March", "April", "May", "June"],
       harvest: ["August", "September", "October", "November"],
       spacing: "45cm apart",

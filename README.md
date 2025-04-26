@@ -96,11 +96,12 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 | As a first-time visitor | I want to quickly access beginner-friendly resources | so that I can learn how to start growing my own food.|
 | As a first-time visitor | I want to browse the plant list without creating an account  | so that I can explore without commitment. |
 | As a first-time visitor | I want to see plant info in a modal with clear, attractive images and symbols  | so that I can quickly understand their needs. |
-| As a first-time visitor |  I would like to see a 404 error page if I visit a dead link | so I am not confused or lost. |
+| As a first-time visitor | I would like to see a 404 error page if I visit a dead link | so I am not confused or lost. |
 | As a returning visitor |  I want to jump straight into the calendar view | so that I can see what I need to do this month in my garden.|
 | As a returning visitor | I want a Resources page with helpful links to articles, seeds and equipment retailers, and book recommendations  | so I can keep learning about growing. |
 | As a returning visitor | I want to be able to search for specific plants  | so I can find information I need efficiently. |
 | As a returning visitor | I want to be able to contact the app creator  | so I can give them feedback. |
+| As a mobile user |  I want a fully responsive app with buttons and text large and readable | so I can use the app outside in the garden. |
 
 ## Wireframes
 

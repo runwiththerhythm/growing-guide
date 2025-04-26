@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Growing Guide</title>
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png" type="image/png">
-    <!-- Stylesheet -->    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
+    <!-- Header section with navigation -->
     <header>
-        <nav class="navbar">
+         <nav class="navbar" aria-label="Main navigation">
             <div class="logo">
               <a href="index.html">
                 <img src="assets/images/growing-guide-logo.svg" alt="Growing Guide Logo" width="120">
                 <h1>Growing Guide</h1>
               </a>
             </div>
-            <ul class="nav-links">
-              <li><a href="index.html" class="active">Home</a></li>
+            <ul class="nav-links" aria-label="Main menu">
+              <li><a href="index.html" class="active" aria-current="page">Home</a></li>
               <li><a href="resources.html">Resources</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -31,42 +38,48 @@
           </nav>
     </header>
 
+    <!-- Main content section -->
+
     <main>
+      <section class="intro">
+        <h2>Your seasonal garden companion. </h2>
+        <h3>Discover what to grow and when to sow.</h3>
+      </section>
 
-    <h2>Your seasonal garden companion. </h2>
-    <h3>Discover what to grow and when to sow.</h3>
-
+    <!-- Search bar -->
     <input 
     type="text" 
     id="searchInput" 
     class="search-bar"
     placeholder="Search for a plant...">
     
+    <!-- View Buttons -->
     <div class="view-buttons">
         <button id="viewByPlant">View by Plant</button>
         <button id="viewByMonth" >View by Month</button>
-
     </div>
+  </section>
 
-    <!-- Filter Buttons -->
-    <div class="type-filters">
+    <!-- Plant Type Filters -->
+    <section class="type-filters" aria-labelledby="filterSection">
         <button data-type="all">All</button>
         <button data-type="vegetable">Vegetables</button>
         <button data-type="fruit">Fruits</button>
         <button data-type="herb">Herbs</button>
         <button data-type="flower">Flowers</button>
-    </div>
+    </section>
 
     <!-- The plant view grid -->
-    <div id="plantGrid" class="plant-grid"></div>
+    <section id="plantGrid" class="plant-grid"></section>
+
     <!-- The month view grid (hidden by default) -->
-    <div id="monthGrid" class="month-grid hidden"></div>
+    <section id="monthGrid" class="month-grid hidden"></section>
 
     <!-- Modal for plant details -->
     <div id="plantModal" class="modal hidden">
         <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <div id="modalBody"></div>
+        <button class="close-button">&times;</button>
+        <section id="modalBody"></section>
         </div>
     </div>
   </main>
@@ -75,7 +88,7 @@
     <p>Copyright 2025 Growing Guide</p>
   </footer>
 
-    <!-- Load the plant data first, then the script -->
+    <!-- External scripts - Load the plant data first, then the script -->
   <script src="assets/js/data.js"></script>
   <script src="assets/js/script.js"></script>
 </body>

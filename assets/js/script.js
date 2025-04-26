@@ -128,7 +128,6 @@ function generateCalendarStrip(plant) {
     <div class="calendar-labels">
       <span class="label sow">🟩 Sow</span>
       <span class="label harvest">🟧 Harvest</span>
-      <span class="label current-month">⬛ Today</span>
     </div>
   `;
 }

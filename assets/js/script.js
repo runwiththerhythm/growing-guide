@@ -41,7 +41,7 @@ function renderPlants(data) {
     // Create the card HTML
 card.innerHTML = `
 <div class="img">
-  <img src="${plant.img}" alt="${plant.name}" />
+  <img src="${plant.img}" alt="${plant.name} icon">
 </div>
 <div class="name">${plant.name}</div>
 <div class="botanical-name"><em>${plant.botanicalName}</em></div>

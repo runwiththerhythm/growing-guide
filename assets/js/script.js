@@ -224,7 +224,7 @@ function createGroupedPills(plants, label) {
 }
 
 // Close modal when clicking the close button
-if (close.Button) {
+if (closeButton) {
 closeButton.addEventListener("click", () => modal.classList.add("hidden"));
 }
 

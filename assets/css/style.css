@@ -140,12 +140,9 @@ body {
 }
 
 /* Introduction */
-.app-intro {
+.intro {
   text-align: center;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-  color: #4CAF50;
-  font-weight: 500;
+  margin-top: 2rem;
 }
 
 /* Search  bar */
@@ -621,7 +618,7 @@ body {
   @media (max-width: 768px) {
 
     body {
-      padding: 4px;
+      padding: 16px 4px 4px 16px;
     }
 
     .navbar {

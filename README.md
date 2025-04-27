@@ -1,5 +1,5 @@
 
-# [growing-guide](https://runwiththerhythm.github.io/growing-guide)
+# [Growing Guide](https://runwiththerhythm.github.io/growing-guide)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/commits/main)
@@ -12,46 +12,45 @@ You can explore the growing guide in two ways: by individual plants or by month,
 
 The design is kept simple, fun, friendly and yet informative.
 
-**Site Mockups**
-
 ![screenshot](documentation/mockup.png)
 
-source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://runwiththerhythm.github.io/growing-guide)
+Source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://runwiththerhythm.github.io/growing-guide)
 
-## UX
+## Live Project
+### [View the live project here.](https://runwiththerhythm.github.io/growing-guide)
 
-### The 5 Planes of UX
+## The 5 Planes of UX
 
-#### 1. Strategy Plane
-##### Purpose
+### 1. Strategy Plane
+#### Purpose
 - Help users plan their gardening activities with a simple, accessible interface.
 - Offer seasonal sowing and growing guidance tailored to the UK climate.
 - Promote learning through detailed plant info and curated resources.
 
-##### Primary User Needs
+#### Primary User Needs
 - Know what to sow and when and be able to navigate this information quickly.
 - Filter plants by type.
 - Search for plants quickly.
 - Access reliable growing info and learning resources.
 - Use the app easily across devices, including mobile.
 
-##### Business Goals
+#### Business Goals
 - Build a visually engaging, educational tool to support home gardening.
 - Showcase potential for portfolio use or expansion into a more feature-rich tool.
 
-#### 2. Scope Plane
-##### Features
+### 2. Scope Plane
+#### Features
 - A full list of [Features](#features) can be viewed in detail below.
 
-##### Content Requirements
+#### Content Requirements
 - Icons for plants.
 - Plant data: name, type, sowing months, harvest months, companions, plants to avoid.
 - Navigation accessibility for all screen sizes.
 - Resource links and categories.
 
 
-#### 3. Structure Plane
-##### Information Architecture
+### 3. Structure Plane
+#### Information Architecture
 - **Navigation Menu**:
   - Simple navbar with accessible links.
 - **Hierarchy**:
@@ -60,7 +59,7 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
   - Filter controls and views are prominent.
   - Plants / months shown in a grid with interaction cues.
 
-##### User Flow
+#### User Flow
 1. User lands on the home page → reads intro and sees default plant view.
 2. Directly searches for a plant or filters or switches views → explores seasonal plants.
 3. Clicks a plant → reads modal with growing instructions and tips.
@@ -68,26 +67,24 @@ source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 4. Uses navigation to explore Resources or learn more about the app.
 5. Return to explore more plants.
 
-#### 4. Skeleton Plane
-##### Wireframe Suggestions
+### 4. Skeleton Plane
+#### Wireframe Suggestions
 - A full list of [Wireframes](#wireframes) can be viewed in detail below.
 
-#### 5. Surface Plane
-##### Visual Design Elements
-- **[Colours](#colour-scheme)**: see below.
-- **[Typography](#typography)**: see below.
-
-### Colour Scheme
+### 5. Surface Plane
+#### Visual Design Elements
+- #### Colour Scheme
 
 
 ![screenshot](documentation/coolors.png)
+#### Typography
 
-### Typography
+- [Poetsen One](https://fonts.google.com/specimen/Poetsen+One) was used for the primary headings and titles.
+Poetsen One is a bold, rounded display typeface inspired by hand-painted signage and classical Roman letterforms. Its playful and friendly character makes it ideal for headlines, logos, and branding that aim to convey warmth and approachability.
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Source Sans 3 ](https://fonts.google.com/specimen/Source+Sans+3) was used for all other secondary text. Source Sans 3 provides a clean professional and light sans-serif to compliment the heavier Poetson One and it looks good and legible when it italics for the scientific plant names.
 
-## User Stories
+### User Stories
 
 | Target | Expectation | Outcome |
 | --- | --- | --- |
@@ -113,10 +110,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
 
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each feature. You should explain what value each of the features provides for the user, focusing on your target audience, what they want to achieve, and how your project can help them achieve these things.
-
-**IMPORTANT**: Remember to always include a screenshot of each individual feature!
 
 
 ### Existing Features
@@ -184,10 +177,9 @@ Want to add more?
 
 [GitHub Issues](https://www.github.com/runwiththerhythm/growing-guide/issues) served as an another Agile tool. There, I managed my User Stories, feature implementation and tracked any issues/bugs.
 
-| Link | Screenshot |
-| --- | --- |
-| [![GitHub issues](https://img.shields.io/github/issues/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/issues) | ![screenshot](documentation/gh-issues-open.png) |
-| [![GitHub closed issues](https://img.shields.io/github/issues-closed/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/issues?q=is%3Aissue+is%3Aclosed) | ![screenshot](documentation/gh-issues-closed.png) |
+
+[![GitHub issues](https://img.shields.io/github/issues/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/issues) 
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/runwiththerhythm/growing-guide)](https://www.github.com/runwiththerhythm/growing-guide/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Testing
 

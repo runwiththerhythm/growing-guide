@@ -11,11 +11,11 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-|  | [404.html](https://github.com/runwiththerhythm/growing-guide/blob/main/404.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/404.html) | ![screenshot](documentation/validation/html--404.png) | Notes (if applicable) |
-|  | [index.html](https://github.com/runwiththerhythm/growing-guide/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/index.html) | ![screenshot](documentation/validation/html--index.png) | Notes (if applicable) |
-|  | [resources.html](https://github.com/runwiththerhythm/growing-guide/blob/main/resources.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/resources.html) | ![screenshot](documentation/validation/html--resources.png) | Notes (if applicable) |
-|  | [about.html](https://github.com/runwiththerhythm/growing-guide/blob/main/about.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/about.html) | ![screenshot](documentation/testing/html-validator-about-pass.png) | Notes (if applicable) |
-|  | [contact.html](https://github.com/runwiththerhythm/growing-guide/blob/main/contact.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/contact.html) | ![screenshot](documentation/testing/html-validation-contact-pass.png) | Notes (if applicable) |
+|  | [404.html](https://github.com/runwiththerhythm/growing-guide/blob/main/404.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/404.html) | ![screenshot](documentation/testing/html-validator-404-pass.png) |  |
+|  | [index.html](https://github.com/runwiththerhythm/growing-guide/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/index.html) | ![screenshot](documentation/testing/html-validator-index-pass.png) | ![screenshot](documentation/testing/html-validator-index-error.png) Fixed error |
+|  | [resources.html](https://github.com/runwiththerhythm/growing-guide/blob/main/resources.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/resources.html) | ![screenshot](documentation/testing/html-validator-resources-pass.png) |  |
+|  | [about.html](https://github.com/runwiththerhythm/growing-guide/blob/main/about.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/about.html) | ![screenshot](documentation/testing/html-validator-about-pass.png) |  |
+|  | [contact.html](https://github.com/runwiththerhythm/growing-guide/blob/main/contact.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://runwiththerhythm.github.io/growing-guide/contact.html) | ![screenshot](documentation/testing/html-validation-contact-pass.png) |  |
 
 ### CSS
 
@@ -28,25 +28,6 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
-⚠️ INSTRUCTIONS ⚠️
-
-If using modern JavaScript (ES6) methods, then make sure to include the following line at the very top of every single JavaScript file in your project (this should remain in your files for submission as well):
-
-`/* jshint esversion: 11 */`
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-`/* jshint esversion: 11, jquery: true */`
-
-This allows the JShint validator to recognize modern ES6 methods, such as: `let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as "an array of questions" from `questions.js`, which are used within the main `script.js` file elsewhere. If that's the case, the JShint validation tool doesn't know how to recognize "unused variables" that would normally be imported locally when running your own project. These warnings are acceptable, so showcase on your screenshot(s).
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc. To instantiate these components, we need to use their respective declarator. Again, the JShint validation tool would flag these as "undefined/unused variables". These warnings are acceptable, so showcase on your screenshot(s).
-
-⚠️ --- END --- ⚠️
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
@@ -62,79 +43,43 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ## Responsiveness
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is to test the following 3 sizes:
-
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of your results, to "prove" that you've actually tested them.
-
-Using the [amiresponsive](http://ami.responsivedesign.is) mockup images (*or similar*) does not meet the requirements. Consider using some of the built-in device sizes from the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well. It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project to check for responsiveness issues.
 
 | Page | Mobile | Tablet | Desktop | Notes |
 | --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/responsiveness/mobile-home.png) | ![screenshot](documentation/responsiveness/tablet-home.png) | ![screenshot](documentation/responsiveness/desktop-home.png) | Works as expected |
-| Game | ![screenshot](documentation/responsiveness/mobile-game.png) | ![screenshot](documentation/responsiveness/tablet-game.png) | ![screenshot](documentation/responsiveness/desktop-game.png) | Works as expected |
-| 404 | ![screenshot](documentation/responsiveness/mobile-404.png) | ![screenshot](documentation/responsiveness/tablet-404.png) | ![screenshot](documentation/responsiveness/desktop-404.png) | Works as expected |
+| Home | ![screenshot](documentation/testing/mobile-home.png) | ![screenshot](documentation/testing/tablet-home.png) | ![screenshot](documentation/testing/chrome-index.png) | Works as expected |
+| Plant Modal | ![screenshot](documentation/testing/mobile-modal1.png) | ![screenshot](documentation/testing/tablet-modal.png) | ![screenshot](documentation/testing/firefox-modal.png) | Works as expected |
+| Month View | ![screenshot](documentation/testing/mobile-month.png) | ![screenshot](documentation/testing/tablet-month.png) | ![screenshot](documentation/testing/chrome-month.png) | Works as expected |
+| Resources | ![screenshot](documentation/testing/mobile-404.png) | ![screenshot](documentation/testing/tablet-404.png) | ![screenshot](documentation/testing/firefox-404.png) | Works as expected |
+| About | ![screenshot](documentation/testing/mobile-about.png) | ![screenshot](documentation/testing/tablet-about.png) | ![screenshot](documentation/testing/chrome-about.png) | Works as expected |
+| Contact | ![screenshot](documentation/testing/mobile-contact.png) | ![screenshot](documentation/testing/tablet-contact.png) | ![screenshot](documentation/testing/chrome-contact.png) | Works as expected |
+| 404 | ![screenshot](documentation/testing/mobile-404.png) | ![screenshot](documentation/testing/tablet-404.png) | ![screenshot](documentation/testing/firefox-404.png) | Works as expected |
 
 ## Browser Compatibility
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site on various browsers. Consider testing at least 3 different browsers, if available on your system. You DO NOT need to use all of the browsers below, just pick any 3 (minimum).
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the browsers you've tested, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time. Some of these are paid services, but some are free. If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Page | Chrome | Firefox | Safari | Notes |
+- [Chrome](https://www.google.com/chrome)
+- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
+- [Brave](https://brave.com/download)
+
+| Page | Chrome | Firefox | Brave | Notes |
 | --- | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/browsers/chrome-home.png) | ![screenshot](documentation/browsers/firefox-home.png) | ![screenshot](documentation/browsers/safari-home.png) | Works as expected |
-| Game | ![screenshot](documentation/browsers/chrome-game.png) | ![screenshot](documentation/browsers/firefox-game.png) | ![screenshot](documentation/browsers/safari-game.png) | Works as expected |
-| 404 | ![screenshot](documentation/browsers/chrome-404.png) | ![screenshot](documentation/browsers/firefox-404.png) | ![screenshot](documentation/browsers/safari-404.png) | Works as expected |
+| Home | ![screenshot](documentation/testing/chrome-index.png) | ![screenshot](documentation/testing/firefox-index.png) | ![screenshot](documentation/testing/brave-home.png) | Works as expected |
+| About | ![screenshot](documentation/testing/chrome-about.png) | ![screenshot](documentation/testing/firefox-about.png) | ![screenshot](documentation/testing/brave-about.png) | Works as expected |
+| Contact| ![screenshot](documentation/testing/chrome-contact.png) | ![screenshot](documentation/testing/firefox-contact.png) | ![screenshot](documentation/testing/brave-contact.png) | Works as expected |
+| Modal | ![screenshot](documentation/testing/chrome-modal.png) | ![screenshot](documentation/testing/firefox-modal.png) | ![screenshot](documentation/testing/brave-modal.png) | Works as expected |
+| Month View | ![screenshot](documentation/testing/chrome-month.png) | ![screenshot](documentation/testing/firefox-month.png) | ![screenshot](documentation/testing/brave-month.png) | Works as expected |
+| 404 | ![screenshot](documentation/testing/chrome-404.png) | ![screenshot](documentation/testing/firefox-404.png) | ![screenshot](documentation/testing/brave-404.png) | Works as expected |
 
 ## Lighthouse Audit
 
-⚠️ INSTRUCTIONS ⚠️
+I've tested my deployed project using the Lighthouse Audit tool to check for any issues. 
 
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports. Avoid testing the local version (Gitpod/VSCode/etc.), as this can have knock-on effects for performance. If you don't have "Lighthouse" in your Developer Tools, it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
+| Mobile | Desktop |
+| --- | --- |
+| ![screenshot](documentation/testing/lighthouse-mobile.png) | ![screenshot](documentation/testing/lighthouse-desktop.png) |
 
-Unless your project is a single-page application (SPA), you should test Lighthouse Audit results for all of your pages, for both *mobile* and *desktop*.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-⚠️ --- END --- ⚠️
-
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
-
-| Page | Mobile | Desktop |
-| --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
-| Game | ![screenshot](documentation/lighthouse/mobile-game.png) | ![screenshot](documentation/lighthouse/desktop-game.png) |
-| 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
 
 ## Defensive Programming
 

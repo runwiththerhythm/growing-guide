@@ -357,7 +357,7 @@ const plantData = [
       type: ["fruit"],
       img: "assets/images/raspberries.svg",
       companions: ["Spring Onion", "Chives"],
-      avoid: ["Potatoes", "Tomatoes"],
+      avoid: ["Potato", "Tomato"],
       sow: ["January", "February", "March"],
       harvest: ["June", "July", "August", "September"],
       spacing: "45cm between canes",

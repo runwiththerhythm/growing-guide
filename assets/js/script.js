@@ -240,7 +240,6 @@ if (searchInput) {
     renderPlants(filteredPlants);
   });
 }
-
 // 🌱 Type filter logic
 const typeButtons = document.querySelectorAll(".type-filters button");
 

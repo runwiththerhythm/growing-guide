@@ -47,11 +47,20 @@
       </section>
 
     <!-- Search bar -->
-    <input 
-    type="text" 
-    id="searchInput" 
-    class="search-bar"
-    placeholder="Search for a plant...">
+        <form role="search" class="search-form">
+          <label for="searchInput" class="visually-hidden">Search for a plant</label>
+          <div class="search-wrapper">
+            <img src="assets/images/magnifying-glass.svg"
+                alt="" aria-hidden="true"
+                class="search-icon">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-bar" 
+              placeholder="Search for a plant...">
+
+          </div>
+        </form>
     
     <!-- View Buttons -->
     <div class="view-buttons">
@@ -61,7 +70,7 @@
   </section>
 
     <!-- Plant Type Filters -->
-    <section class="type-filters" aria-labelledby="filterSection">
+    <section class="type-filters">
         <button data-type="all">All</button>
         <button data-type="vegetable">Vegetables</button>
         <button data-type="fruit">Fruits</button>

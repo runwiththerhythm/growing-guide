@@ -40,7 +40,7 @@ Source: [growing-guide amiresponsive](https://ui.dev/amiresponsive?url=https://r
 
 ### 2. Scope Plane
 #### Features
-- A full list of [Features](#features) can be viewed in detail below.
+- A full list of [Features](#features-1) can be viewed in detail below.
 
 #### Content Requirements
 - Icons for plants.
@@ -111,36 +111,30 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Features
 
-
 ### Existing Features
 
 | Feature | Notes | Screenshot |
 | --- | --- | --- |
-| Operators | The mathematical operators (`+`, `-`, `*`, `/`) are large and colorful to allow users to easily select their preferred method of testing their calculation skills. Each operator is color-coded, and has the text name as well for easy identification. | ![screenshot](documentation/features/operators.png) |
-| Equation | This section visibly displays the current equation to be calculated, dynamically updated to use the specific operator that the user has selected above. The empty `<input>` field allows users to enter valid numerical values to test their math skills. | ![screenshot](documentation/features/equation.png) |
-| Submit Answer | This button allows user to submit their calculation to see if they've successfully answered the current equation. Users can also use the `[ENTER]` key on their keyboard to submit their answers, too. | ![screenshot](documentation/features/submit-answer.png) |
-| Scores | This section tallies the total number of *correct* and *incorrect* answers that the user has calculated. Green to represent *correct*, and red to represent *incorrect*. | ![screenshot](documentation/features/scores.png) |
-| Alerts | Depending on whether or not the user gets the calculation correct or incorrect, alerts are used to provide simple feedback to the user. This showcases if they got it correct, or if they've gotten it incorrect, therefore also showing the correct answer. | ![screenshot](documentation/features/alerts.png) |
-| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the *Love Maths* site by using the standard navbar and footer. | ![screenshot](documentation/features/404.png) |
+| Navigation | Found on all pages, the fully responsive navigation area features a clear logo an app name which are clickable to take the user to the main page. The navigation links are and simple and light so as not to detract from the main app experience. On mobile the nav is accessed through a hamburger icon. | ![screenshot](documentation/main-navigation.png) |
+| Search | The search form allows the user to search for plants and categories and uses js to update in real time. | ![screenshot](documentation/search-functionality.png) |
+| Plant View | This is the default view of the app which displays all plant cards in a grid and allows the user to click on them to view the interactive modal. | ![screenshot](documentation/plant-grid-view.png) |
+| Month View | Accessed from the CTA button this view displays months as cards in a responsive grid with sowing and harvesting info displayed per plant with a pastel coloured pill design. | ![screenshot](documentation/month-grid-view.png) |
+| Type Filters| Buttons that allow the user to filter the displayed plants by type of vegetables, fruit, flower or herbs. | ![screenshot](documentation/type-filters-fruit.png) |
+| Plant Modal| Accessed when the user clicks on any plant name this is where the plant data is displayed. Featuring a calender strip to show sowing and harvesting times and simple but informative plant info. | ![screenshot](documentation/testing/brave-modal.png) |
+| Resources Page | A handy and educational list of helpful resources including education and shopping. | ![screenshot](documentation/resources.png) |
+| Contact Page| This contact form gives the impression it allows the user to contact the app creator with feedback. It submits to a success page to provide feedback to the user. | ![screenshot](documentation/contact-form.png) |
+| 404 | The 404 error page will indicate when a user has somehow navigated to a page that doesn't exist. This replaces the default GitHub Pages 404 page, and ties-in with the look and feel of the site by using the standard navbar. | ![screenshot](documentation/testing/firefox-404.png) |
 
 ### Future Features
 
-- **Advanced Calculations**: Add support for more complex mathematical operations, like square roots, powers, logarithms, trigonometry (sin, cos, tan), etc.
-- **Equation History**: Display a running log of previous calculations with the ability to recall or reuse past results.
-- **Multi-Step Equations**: Allow users to input multi-step calculations (e.g., `5 + 3 * 2 - 4`) with proper order of operations.
-- **Graphing Capabilities**: Integrate a graphing feature where users can plot functions or equations visually.
-- **Fraction Support**: Add functionality to handle calculations with fractions, including simplifications and conversions between fractions and decimals.
-- **Unit Conversions**: Introduce a feature to convert between different units of measurement (e.g., meters to feet, Celsius to Fahrenheit).
-- **Equation Solver**: Add the ability to solve algebraic equations for a given variable (e.g., `2x + 5 = 13`).
-- **Memory Functions**: Include memory functions (`M+`, `M-`, `MR`) so users can store, add to, and recall values during their calculations.
-- **Input Validation**: Provide real-time feedback for invalid inputs, such as attempting to divide by zero or using incorrect syntax.
-- **Dark Mode**: Add a dark mode option to enhance user experience and reduce eye strain during extended use.
-- **Customizable Themes**: Allow users to choose different themes, colors, or layouts for personalizing their experience.
-- **Calculation Explanations**: Display step-by-step explanations of how the solution is derived, useful for educational purposes or beginners.
-- **Statistical Functions**: Introduce basic statistical operations such as mean, median, mode, and standard deviation.
-- **Save & Share Calculations**: Allow users to save or share their results via a link or social media, especially for complex equations or useful outputs.
-- **Voice Input**: Add a voice input option for users to dictate their calculations instead of typing.
-- **Educational Quizzes**: Implement math-based quizzes or games to help users improve their arithmetic skills while using the app.
+- **Sow and harvest for the same month**: Currently the app only shows sow or harvest for each month, several species can be sown and harvested at the same month however so this is a priority future feature.
+- **Include 'planting out' and 'indoor / outdoor sowing**: Adding more detailed information to include more growing conditions.
+- **User Favourites**: Allow users to add a list of favourite plants for quick access and planning.
+- **Expand resource listings**: Add more links and content to the resources page.
+- **Add more plants to the data**: Add more plants to the data starting with ones which are referenced as companions or avoid.
+- **Dark Mode and toggle**: Implement dark mode with toggle switch to switch between light mode and dark mode.
+- **UI/UX enhancements**: Add more soft animations and transitions between views.
+- **Attach email to contact form**: Set up the contact form so it actually submits to an email address.
 
 ## Tools & Technologies
 
@@ -157,13 +151,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | [![badge](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) | Automated JavaScript testing. |
 | [![badge](https://img.shields.io/badge/ChatGPT-grey?logo=openai&logoColor=75A99C)](https://chat.openai.com) | Help debug, troubleshoot, and explain things. |
 
-⚠️ NOTE ⚠️
-
-Want to add more?
-
-- Tutorial: https://shields.io/badges/static-badge
-- Icons/Logos: https://simpleicons.org
-  - FYI: not all logos are available to use
 
 ## Agile Development Process
 
@@ -237,6 +224,8 @@ There are no remaining major differences between the local version when compared
 
 | Source | Notes |
 | --- | --- |
+| [Royal Horticultural Society](https://www.rhs.org.uk/) | Plant information and inspiration |
+| [Real Seeds](https://www.realseeds.co.uk/) | Accurate data for seasonal growing |
 | [Markdown Builder](https://markdown.2bn.dev) | Help generating Markdown files |
 | [Interactive Frontend Development](https://codeinstitute.net) | Code Institute walkthrough project inspiration |
 | [JavaScript30](https://javascript30.com) | Additional JS help |
@@ -245,19 +234,14 @@ There are no remaining major differences between the local version when compared
 ### Media
 
 - Images
-  - SVG line icons were used from the below sites and coloured in Inkscaoe vector software.
+  - SVG line icons were used from the below sites and coloured in Inkscape vector software.
     - [Noun Project](https://thenounproject.com/)
     - [Vecteezy](https://www.vecteezy.com/free-vector/vector)
-
-- Image Compression
-    - [TinyPNG](https://tinypng.com) (for images <5MB)
-    - [CompressPNG](https://compresspng.com) (for images >5MB)
 
 
 ### Acknowledgements
 
 - I would like to thank;
 The [Code Institute](https://codeinstitute.net) for their learning materials and project assignment.
-My Code Institute mentor, [Tim Nelson](https://www.github.com/TravelTimN) for his support throughout development of this project.
-My Nescot college facilitator Johnathan Jacobson.
+My Code Institute mentor, [Tim Nelson](https://www.github.com/TravelTimN) and my Nescot college facilitator Johnathan Jacobson for their support throughout development of this project.
 

@@ -19,12 +19,23 @@ if (viewByPlantBtn) {
 }
 
 // View switching: Show month view
-if (viewByPlantBtn) {
-viewByMonthBtn.addEventListener("click", () => {
-  renderMonthView();
-  plantGrid.classList.add("hidden");
-  monthGrid.classList.remove("hidden");
-});
+if (viewByMonthBtn) {
+  viewByMonthBtn.addEventListener("click", () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    let filtered = plantData.filter(p =>
+      p.name.toLowerCase().includes(searchTerm) ||
+      p.botanicalName.toLowerCase().includes(searchTerm)
+    );
+    const activeType = document.querySelector(".type-filters button.active")?.dataset.type;
+    if (activeType && activeType !== "all") {
+      filtered = filtered.filter(p => p.type.includes(activeType));
+    }
+
+    renderMonthView(filtered);
+
+    plantGrid.classList.add("hidden");
+    monthGrid.classList.remove("hidden");
+  });
 }
 
 // Render the plants as cards
@@ -145,14 +156,14 @@ function shortToFull(shortMonth) {
 
 // Month View
 
-function renderMonthView() {
+function renderMonthView(filteredPlants = plantData) {
   monthGrid.innerHTML = "";
   const fullMonths = ["January", "February", "March", "April", "May", "June",
                       "July", "August", "September", "October", "November", "December"];
 
   fullMonths.forEach(month => {
-    const sowPlants = plantData.filter(p => p.sow.includes(month));
-    const harvestPlants = plantData.filter(p => p.harvest.includes(month));
+    const sowPlants    = filteredPlants.filter(p => p.sow.includes(month));
+    const harvestPlants = filteredPlants.filter(p => p.harvest.includes(month));
 
     const card = document.createElement("div");
     card.className = "month-card";
@@ -238,6 +249,7 @@ if (searchInput) {
       plant.botanicalName.toLowerCase().includes(searchTerm)
     );
     renderPlants(filteredPlants);
+    renderMonthView(filteredPlants);
   });
 }
 // 🌱 Type filter logic
@@ -264,6 +276,7 @@ typeButtons.forEach(button => {
     }
 
     renderPlants(filtered);
+    renderMonthView(filtered);
   });
 });
 

@@ -13,7 +13,6 @@ You can explore the growing guide in two ways: by individual plants or by month,
 The design is kept simple, fun, friendly and yet informative.
 
 **Site Mockups**
-*([amiresponsive](https://ui.dev/amiresponsive?url=https://runwiththerhythm.github.io/growing-guide), [techsini](https://techsini.com/multi-mockup), etc.)*
 
 ![screenshot](documentation/mockup.png)
 

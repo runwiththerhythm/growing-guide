@@ -102,12 +102,11 @@ Poetsen One is a bold, rounded display typeface inspired by hand-painted signage
 ## Wireframes
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Canva](https://www.canva.com) to design my site wireframes.
 
 | Page | Mobile | Tablet | Desktop |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/wireframes/mobile-home.png) | ![screenshot](documentation/wireframes/tablet-home.png) | ![screenshot](documentation/wireframes/desktop-home.png) |
-| 404 | ![screenshot](documentation/wireframes/mobile-404.png) | ![screenshot](documentation/wireframes/tablet-404.png) | ![screenshot](documentation/wireframes/desktop-404.png) |
+| Home | ![screenshot](documentation/wireframes/mobile-home-wireframe.png) | ![screenshot](documentation/wireframes/tablet-home-wireframe.png) | ![screenshot](documentation/wireframes/desktop-home-wireframe.png) |
 
 ## Features
 

@@ -467,7 +467,7 @@ body {
     justify-content: center;
     background-color: #f0f9f2; 
     text-align: center;
-    color: #355e3b;
+    color:  var(--main-color);
     margin-top: 0;
    
   }
@@ -495,7 +495,7 @@ body {
   
   .error-container .btns .btn {
     text-decoration: none;
-    background-color: #72b36f; /* Green background for buttons */
+    background-color: var(--main-color);
     color: white;
     padding: 0.8rem 1.2rem;
     border-radius: 8px;
@@ -505,7 +505,7 @@ body {
   }
   
   .error-container .btns .btn:hover {
-    background-color: #5a9359;
+    background-color:  var(--main-color);
   }
 
   /* Resources Page Styles */
@@ -515,14 +515,14 @@ body {
     margin: 3rem auto;
     padding: 1rem;
     font-family: var(--body-font);
-    color: #2e462c;
+    color:  var(--main-color);
   }
   
   .resources h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #2e7d32;
+    color:  var(--main-color);
   }
   
   .resource-section {
@@ -536,7 +536,7 @@ body {
   
   .resource-section h3 {
     font-size: 1.4rem;
-    color: #397c43;
+    color:  var(--main-color);
     margin-bottom: 0.75rem;
   }
   
